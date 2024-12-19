@@ -11584,19 +11584,19 @@ html {
   right: 10%; /* Adjust this value to move it horizontally */
   top: 25%; /* Adjust this value to move it vertically */
   transform: translateY(0); /* Optional: remove vertical centering if no longer needed */
-  height: 23vw;
-  width: 23vw;
+  height: 18vw;
+  width: 18vw;
   border-radius: 5vw;
   margin-top: 5vw;
-  max-height: 23rem;
-  max-width: 23rem;
+  max-height: 18rem;
+  max-width: 18rem;
 }
 
 
 
 .profile .profile-img {
-  height: 25vw;
-  max-height: 25rem;
+  height: 20vw;
+  max-height: 20rem;
   position: absolute;
   bottom: 0;
   left: 50%;
