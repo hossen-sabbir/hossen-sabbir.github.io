@@ -11578,24 +11578,18 @@ html {
   font-size: 1.5rem;
 }
 
-
-
-
-
-
-
-
 .profile {
   position: relative;
-  height: auto;
-  width: 300px; /* Set a fixed width */
+  height: 75vw;
+  width: 75vw;
   border-radius: 5vw;
   margin-top: 5vw;
-  max-width: 300px; /* Ensure the maximum size remains consistent */
+  max-height: 40rem;
+  max-width: 40rem;
 }
 .profile .profile-img {
-  width: 100%; /* Make the image width fit the container */
-  height: auto; /* Maintain aspect ratio */
+  height: 80vw;
+  max-height: 45rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -11638,44 +11632,109 @@ html {
   fill: #1e30f3;
 }
 
-/* Remove media queries if a fixed size is intended across all screens */
 @media (min-width: 576px) {
   .profile {
-    width: 500px; /* Consistent size across breakpoints */
-    height: auto;
+    height: 60vw;
+    width: 60vw;
   }
   .profile .profile-img {
-    width: 100%;
-    height: auto;
+    height: 65vw;
+  }
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+  .profile .dots-3 {
+    width: 3vw;
+    left: 1.5vw;
+  }
+  .profile .dots-4 {
+    width: 3vw;
+    left: -4vw;
   }
 }
 @media (min-width: 768px) {
   .profile {
-    width: 500px;
-    height: auto;
+    height: 50vw;
+    width: 50vw;
   }
   .profile .profile-img {
-    width: 100%;
-    height: auto;
+    height: 55vw;
+  }
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+  .profile .dots-3 {
+    width: 3vw;
+    left: 1.5vw;
+  }
+  .profile .dots-4 {
+    width: 3vw;
+    left: -4vw;
   }
 }
 @media (min-width: 992px) {
   .profile {
-    width: 500px;
-    height: auto;
+    height: 40vw;
+    width: 40vw;
   }
   .profile .profile-img {
-    width: 100%;
-    height: auto;
+    height: 45vw;
+  }
+  .profile .dots-1 {
+    width: 1.5vw;
+    right: 0.75vw;
+  }
+  .profile .dots-2 {
+    width: 1.5vw;
+    right: -2vw;
+  }
+  .profile .dots-3 {
+    width: 1.5vw;
+    left: 0.75vw;
+  }
+  .profile .dots-4 {
+    width: 1.5vw;
+    left: -2vw;
   }
 }
 @media (min-width: 1200px) {
   .profile {
-    width: 500px;
-    height: auto;
+    height: 35vw;
+    width: 35vw;
   }
   .profile .profile-img {
-    width: 100%;
-    height: auto;
+    height: 40vw;
+  }
+  .profile .dots-1 {
+    width: 1.5vw;
+    right: 0.75vw;
+  }
+  .profile .dots-2 {
+    width: 1.5vw;
+    right: -2vw;
+  }
+  .profile .dots-3 {
+    width: 1.5vw;
+    left: 0.75vw;
+  }
+  .profile .dots-4 {
+    width: 1.5vw;
+    left: -2vw;
   }
 }
+
+
+
+
+
+
