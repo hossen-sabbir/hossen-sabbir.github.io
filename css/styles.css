@@ -11579,16 +11579,16 @@ html {
 }
 .profile {
   position: relative;
-  height: 75vw;
-  width: 75vw;
+  height: 40vw;
+  width: 40vw;
   border-radius: 5vw;
   margin-top: 5vw;
   max-height: 40rem;
   max-width: 40rem;
 }
 .profile .profile-img {
-  height: 80vw;
-  max-height: 45rem;
+  height: 40vw;
+  max-height: 25rem;
   position: absolute;
   bottom: 0;
   left: 50%;
