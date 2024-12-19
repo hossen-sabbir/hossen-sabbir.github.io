@@ -11732,3 +11732,105 @@ html {
     left: -2vw;
   }
 }
+
+
+
+
+
+
+
+
+.profile {
+  position: relative;
+  height: auto;
+  width: 500px; /* Set a fixed width */
+  border-radius: 5vw;
+  margin-top: 5vw;
+  max-width: 500px; /* Ensure the maximum size remains consistent */
+}
+.profile .profile-img {
+  width: 100%; /* Make the image width fit the container */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.profile .dots-1 {
+  position: absolute;
+  width: 3vw;
+  right: 1.5vw;
+  top: 4vw;
+}
+.profile .dots-1 svg {
+  fill: #fff;
+}
+.profile .dots-2 {
+  position: absolute;
+  width: 3vw;
+  right: -4vw;
+  top: 6.05vw;
+}
+.profile .dots-2 svg {
+  fill: #1e30f3;
+}
+.profile .dots-3 {
+  position: absolute;
+  width: 3vw;
+  left: 1.5vw;
+  bottom: 6.05vw;
+}
+.profile .dots-3 svg {
+  fill: #fff;
+}
+.profile .dots-4 {
+  position: absolute;
+  width: 3vw;
+  left: -4vw;
+  bottom: 4vw;
+}
+.profile .dots-4 svg {
+  fill: #1e30f3;
+}
+
+/* Remove media queries if a fixed size is intended across all screens */
+@media (min-width: 576px) {
+  .profile {
+    width: 500px; /* Consistent size across breakpoints */
+    height: auto;
+  }
+  .profile .profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .profile {
+    width: 500px;
+    height: auto;
+  }
+  .profile .profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .profile {
+    width: 500px;
+    height: auto;
+  }
+  .profile .profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .profile {
+    width: 500px;
+    height: auto;
+  }
+  .profile .profile-img {
+    width: 100%;
+    height: auto;
+  }
+}
