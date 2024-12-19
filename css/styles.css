@@ -641,18 +641,18 @@ progress {
   margin-left: auto;
 }
 
-
 @media (min-width: 576px) {
     .container-sm, .container {
-        max-width: 800px; /* Adjust as needed */
+        max-width: 700px; /* Increased width */
     }
 }
 
 @media (min-width: 768px) {
     .container-md, .container-sm, .container {
-        max-width: 1200px; /* Adjust as needed */
+        max-width: 900px; /* Increased width */
     }
 }
+
 
 @media (min-width: 992px) {
     .container-lg, .container-md, .container-sm, .container {
