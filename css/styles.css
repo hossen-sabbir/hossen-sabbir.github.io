@@ -11578,64 +11578,51 @@ html {
   font-size: 1.5rem;
 }
 
-
-
-
+/* Profile container */
 .profile {
   position: relative;
-  height: 37.5vw !important; /* Half of 75vw */
-  width: 37.5vw !important; /* Half of 75vw */
-  border-radius: 2.5vw !important; /* Adjust radius proportionally */
-  margin-top: 2.5vw;
-  max-height: 20rem !important; /* Half of 40rem */
-  max-width: 20rem !important; /* Half of 40rem */
+  height: 37.5vw; /* Smaller height */
+  width: 37.5vw; /* Smaller width */
+  border-radius: 2.5vw;
+  max-height: 20rem;
+  max-width: 20rem;
+  background: #1e30f3; /* Test background color */
+  margin: 0 auto; /* Center the profile container */
 }
-.profile .profile-img {
-  height: 40vw !important; /* Half of 80vw */
-  max-height: 22.5rem !important; /* Half of 45rem */
-  width: auto !important; /* Maintain aspect ratio */
+
+/* Profile image */
+.profile-img {
   position: absolute;
-  bottom: 0;
-  left: 50%;
+  height: 40vw; /* Smaller height */
+  max-height: 22.5rem;
+  left: 60%; /* Move image slightly to the right */
   transform: translateX(-50%);
 }
 
-.profile .dots-1, .profile .dots-2, .profile .dots-3, .profile .dots-4 {
-  width: 1.5vw; /* Reduce the size of the dots proportionally */
+/* Dot styles */
+.dots-1, .dots-2, .dots-3, .dots-4 {
+  position: absolute;
+  height: 100px; /* Adjust the dot height */
+  width: 5px; /* Adjust the dot width */
+  background: #000; /* Dot color */
+  border-radius: 50%;
 }
-@media (min-width: 576px) {
-  .profile {
-    height: 30vw !important;
-    width: 30vw !important;
-  }
-  .profile .profile-img {
-    height: 32.5vw !important;
-  }
+
+/* Positioning the dots to resemble the previous style */
+.dots-1 {
+  top: 10%;
+  left: -10%;
 }
-@media (min-width: 768px) {
-  .profile {
-    height: 25vw !important;
-    width: 25vw !important;
-  }
-  .profile .profile-img {
-    height: 27.5vw !important;
-  }
+.dots-2 {
+  top: 50%;
+  left: -10%;
 }
-@media (min-width: 992px) {
-  .profile {
-    height: 20vw !important;
-    width: 20vw !important;
-  }
-  .profile .profile-img {
-    height: 22.5vw !important;
-  }
+.dots-3 {
+  top: 80%;
+  left: -10%;
 }
-@media (min-width: 1200px) {
-  .profile {
-    height: 17.5vw !important;
-    width: 17.5vw !important;
-  }
-  .profile .profile-img {
-    height: 20vw !important;
-  }
+.dots-4 {
+  top: 20%;
+  right: -10%;
 }
+
