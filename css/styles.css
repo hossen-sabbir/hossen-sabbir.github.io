@@ -11583,7 +11583,6 @@ html {
   position: absolute; /* Change to fixed if you want the image to stay fixed when scrolling */
   right: 4vw; /* Adjust this value to control how far it is moved to the right */
   top: 30%; /* Centers it vertically */
-  transform: translateY(-50%); /* Adjusts vertical alignment */
   height: 23vw;
   width: 23vw;
   border-radius: 5vw;
