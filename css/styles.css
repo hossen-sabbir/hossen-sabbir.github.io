@@ -11581,8 +11581,9 @@ html {
 
 .profile {
   position: absolute; /* Change to fixed if you want the image to stay fixed when scrolling */
-  right: 4vw; /* Adjust this value to control how far it is moved to the right */
-  top: 30%; /* Centers it vertically */
+  right: 10%; /* Adjust this value to move it horizontally */
+  top: 10%; /* Adjust this value to move it vertically */
+  transform: translateY(0); /* Optional: remove vertical centering if no longer needed */
   height: 23vw;
   width: 23vw;
   border-radius: 5vw;
@@ -11590,6 +11591,7 @@ html {
   max-height: 23rem;
   max-width: 23rem;
 }
+
 
 
 .profile .profile-img {
