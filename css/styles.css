@@ -7611,7 +7611,7 @@ textarea.form-control-lg {
 }
 
 .mt-5 {
-  margin-top: 3rem !important;
+  margin-top: 4rem !important;
 }
 
 .mt-auto {
@@ -11583,8 +11583,8 @@ html {
   width: 40vw;
   border-radius: 5vw;
   margin-top: 5vw;
-  max-height: 40rem;
-  max-width: 40rem;
+  max-height: 23rem;
+  max-width: 23rem;
 }
 .profile .profile-img {
   height: 40vw;
