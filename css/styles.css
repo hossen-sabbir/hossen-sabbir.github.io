@@ -11739,7 +11739,14 @@ html {
   }
 }
 
-.resume-page .container {
+/* Resume page: force full-width container */
+.resume-page .container,
+.resume-page .container-sm,
+.resume-page .container-md,
+.resume-page .container-lg,
+.resume-page .container-xl,
+.resume-page .container-xxl {
   max-width: 1000px !important;
+  width: 100% !important;
 }
 
