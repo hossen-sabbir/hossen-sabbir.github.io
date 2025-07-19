@@ -11738,3 +11738,24 @@ html {
     left: -2vw;
   }
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 1000px !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1000px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px !important;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1000px !important;
+  }
+}
