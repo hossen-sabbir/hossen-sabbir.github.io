@@ -11739,4 +11739,14 @@ html {
   }
 }
 
+li {
+  margin-bottom: 4px; /* Reduce vertical gap between items */
+}
+
+li p {
+  margin: 0; /* Remove default paragraph spacing */
+  line-height: 1.2; /* Slightly tighter line spacing */
+}
+
+
 
