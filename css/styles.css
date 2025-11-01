@@ -11769,39 +11769,50 @@ li p {
 
 
 
-/* Custom style for the inner skill boxes */
+/* --- Fixes and Style Updates for Inner Skill Boxes --- */
+
+/* Use the custom class for the inner boxes */
 .skill-sub-box {
-    background-color: #f8f9fa; /* A slightly darker light color, or a subtle shade if your card is white */
-    /* If your primary card background is white, you might use something like #f8f9fa (light gray) */
-    /* If your card is already a light gray, you might choose a slightly darker custom hex value */
+    /* Set a subtle background so it stands out slightly from the main card */
+    background-color: #f8f9fa; 
+    
+    /* REMOVE SOLID BORDER: We'll use a gradient border instead */
+    border: none; 
+    
+    /* Use a dedicated border class to achieve the gradient border effect */
+    /* Note: True CSS gradient borders are complex. We'll use a trick or rely on Bootstrap's 'border' class if possible.
+       Since a true gradient border requires complex CSS, we will apply the gradient to a pseudo-element 
+       if the title gradient is `bg-gradient-primary-to-secondary`. 
+       For simplicity and compatibility with most themes, let's use the standard 'border' and assume
+       your overall theme CSS makes the standard 'border' class have the right color/gradient look.
+       We will keep the `border` class on the HTML element. */
 }
 
-/* Ensure icons within the gradient titles also inherit the gradient */
-.text-gradient {
-    background-image: var(--bs-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-/* Custom style for the inner skill boxes */
-.skill-sub-box {
-    background-color: #f8f9fa; /* Or your preferred slightly darker background */
-    border: 1px solid #000000 !important; /* Solid black border */
-}
-
-/* Style for the category titles */
+/* Style for the category titles inside the skill boxes */
 .skill-sub-box h5 {
-    padding-bottom: 0.5rem; /* Space below the title before the line */
-    margin-bottom: 1.5rem !important; /* More space between title line and first skill item */
-    border-bottom: 1px solid #000000; /* Solid black line below title */
+    /* Ensure no residual color property is interfering with the gradient */
+    color: transparent !important; 
+    
+    padding-bottom: 0.5rem; 
+    
+    /* Create the dividing line using a solid primary color (usually the base of the gradient) */
+    /* If you know the exact color code for the border, replace 'var(--bs-primary)' */
+    border-bottom: 1px solid var(--bs-primary); 
+    
+    /* Add space below the line */
+    margin-bottom: 1.5rem !important;
 }
 
-/* Ensure icons within the gradient titles also inherit the gradient */
-.text-gradient {
+/* Ensure icons and text use the gradient correctly */
+.skill-sub-box .text-gradient {
     background-image: var(--bs-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* Ensure the icon's color property is set to use the gradient */
 }
 
+/* Set the Border Color to match the Primary/Gradient Look (Requires a small HTML adjustment) */
+/* We'll use Bootstrap's border-primary class on the HTML element to achieve the color match. */
 
 
 
