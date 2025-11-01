@@ -11765,34 +11765,6 @@ li p {
 
 
 
-/* --- Essential Custom CSS --- */
-
-/* 1. Ensures the inner box has a background for contrast */
-.skill-sub-box {
-    background-color: #f8f9fa; /* Example: Very light gray background */
-}
-
-/* 2. Styles the title element to correctly render the gradient text and adds the dividing line */
-.skill-sub-box h5 {
-    /* Required to make the Bootstrap .text-gradient class function */
-    color: transparent !important; 
-    
-    /* Adds padding between the text and the line */
-    padding-bottom: 0.5rem; 
-    
-    /* Adds the THICK solid line using your theme's primary color */
-    border-bottom: 3px solid var(--bs-primary); 
-    
-    /* Sets the spacing between the line and the first skill item */
-    margin-bottom: 1.5rem !important; 
-}
-
-/* 3. Re-applies the gradient effect to the text */
-.skill-sub-box .text-gradient {
-    background-image: var(--bs-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
 
