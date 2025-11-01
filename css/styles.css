@@ -11795,3 +11795,75 @@ li p {
 }
 
 
+
+
+
+
+
+
+
+/* --- Essential Custom CSS --- */
+
+/* 1. Ensures the inner box has a background for contrast if needed */
+.skill-sub-box {
+    background-color: #f8f9fa; /* Example: Very light gray background for inner boxes */
+    border: none !important; /* Remove default Bootstrap border to allow our custom one */
+    position: relative; /* Needed for potential gradient border using pseudo-elements */
+}
+
+/* 2. Styles the title element to correctly render the gradient text and adds the dividing line */
+.skill-sub-box h5 {
+    /* Required to make the Bootstrap .text-gradient class function */
+    color: transparent !important; 
+    
+    /* Adds padding between the text and the line */
+    padding-bottom: 0.75rem; /* Slightly more space */
+    
+    /* Adds the THICK solid line using your theme's primary color */
+    border-bottom: 3px solid var(--bs-primary); /* Thick line */
+    
+    /* Sets the spacing between the line and the first skill item */
+    margin-bottom: 1.5rem !important; 
+}
+
+/* 3. Re-applies the gradient effect to the text and icons */
+.skill-sub-box .text-gradient {
+    background-image: var(--bs-gradient); /* Your theme's gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Standard property */
+    color: transparent; /* Fallback for browsers without -webkit-text-fill-color */
+}
+
+/* 4. Make progress bars match the primary theme color */
+.skill-sub-box .progress-bar {
+    background-color: var(--bs-primary) !important; /* Ensures it uses your primary theme color */
+    /* If your theme's primary is already a gradient, you might need to adjust this 
+       to 'background-image: var(--bs-gradient) !important;' for a gradient bar. */
+}
+
+/* 5. Custom Border for the skill-sub-box (Thicker and matching theme) */
+/* We will use a pseudo-element for a "gradient-like" border, 
+   or simply make the 'border-primary' class thicker. 
+   Assuming 'border-primary' already gives you the right color/gradient look. */
+.skill-sub-box.border-primary {
+    border-width: 3px !important; /* Increase border thickness */
+}
+
+/* Fallback for the border color if var(--bs-primary) isn't defined or isn't a gradient */
+/* If your .border-primary class doesn't automatically get the gradient,
+   you might need a more advanced solution using background-clip or a pseudo-element
+   to create a true gradient border. For now, we'll ensure the border is just thicker 
+   and trust `border-primary` for the color. */
+
+/* Example if you needed a full gradient border and not just a primary color border */
+/* You would remove 'border border-primary' from HTML and use this:
+.skill-sub-box {
+    background: linear-gradient(to right, var(--bs-primary), var(--bs-secondary)) border-box; 
+    border: 3px solid transparent; 
+    border-radius: .25rem; 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+*/
+
