@@ -11758,3 +11758,43 @@ li p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom style for the inner skill boxes */
+.skill-sub-box {
+    background-color: #f8f9fa; /* Or your preferred slightly darker background */
+    border: 1px solid #000000 !important; /* Solid black border */
+}
+
+/* Style for the category titles */
+.skill-sub-box h5 {
+    padding-bottom: 0.5rem; /* Space below the title before the line */
+    margin-bottom: 1.5rem !important; /* More space between title line and first skill item */
+    border-bottom: 1px solid #000000; /* Solid black line below title */
+}
+
+/* Ensure icons within the gradient titles also inherit the gradient */
+.text-gradient {
+    background-image: var(--bs-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
