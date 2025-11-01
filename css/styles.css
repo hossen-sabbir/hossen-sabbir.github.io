@@ -11769,7 +11769,19 @@ li p {
 
 
 
+/* Custom style for the inner skill boxes */
+.skill-sub-box {
+    background-color: #f8f9fa; /* A slightly darker light color, or a subtle shade if your card is white */
+    /* If your primary card background is white, you might use something like #f8f9fa (light gray) */
+    /* If your card is already a light gray, you might choose a slightly darker custom hex value */
+}
 
+/* Ensure icons within the gradient titles also inherit the gradient */
+.text-gradient {
+    background-image: var(--bs-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 /* Custom style for the inner skill boxes */
 .skill-sub-box {
     background-color: #f8f9fa; /* Or your preferred slightly darker background */
