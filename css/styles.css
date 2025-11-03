@@ -11771,5 +11771,23 @@ li p {
 
 
 
+/* Reduce title + content font size inside each skill box */
+.skill-sub-box h5 {
+    font-size: 1rem !important;        /* smaller title */
+}
+
+.skill-sub-box span,
+.skill-sub-box .fw-bold,
+.skill-sub-box .text-muted {
+    font-size: 0.85rem !important;     /* smaller content */
+}
+
+.skill-sub-box .progress {
+    height: 6px !important;            /* thinner progress bar */
+}
+
+.skill-sub-box .progress-bar {
+    height: 6px !important;
+}
 
 
