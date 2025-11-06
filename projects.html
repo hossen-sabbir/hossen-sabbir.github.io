@@ -166,77 +166,88 @@
     </div>
 </div>
 
-<div class="card shadow border-0 rounded-4 mb-2">
+<div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 120px;">
+
+            <!-- ======= IMAGE (Left) ======= -->
+            <div class="p-3 d-flex align-items-center justify-content-center">
+                <img src="assets/strawberry.jpg" 
+                     alt="Paper Figure" 
+                     style="width: 110px; height: 110px; object-fit: cover; border-radius: 10px;">
+            </div>
+
+            <!-- ======= TEXT (Right) ======= -->
             <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+
+                <!-- Title -->
                 <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
                     <b>A Hybrid Machine Learning Approach Utilizing CNN Feature Extraction with Traditional Classifier to Identify Strawberry Leaf Diseases.</b>
                 </p>
 
+                <!-- Authors -->
                 <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
                     <b>Md Sabbir Hossen</b>, Pabon Saha, Md Saiduzzaman
                 </p>
 
+                <!-- Conference -->
                 <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.7rem;">
-                    <i>4th International Conference on Electrical, Computer and Communication Engineering (ECCE)</i> 
+                    <i>4th International Conference on Electrical, Computer and Communication Engineering (ECCE)</i>
                     <span style="color: red;"><b>[Accepted]</b></span>
                 </p>
 
-                <!-- ===== Buttons Row ===== -->
+                <!-- ===== BUTTON ROW ===== -->
                 <div class="d-flex gap-2 flex-wrap">
 
-                    <!-- ABSTRACT BUTTON -->
-                    <button class="btn btn-sm btn-outline-primary" 
-                            data-bs-toggle="collapse" 
+                    <button class="btn btn-sm btn-primary"
+                            data-bs-toggle="collapse"
                             data-bs-target="#abs1">
                         Abstract
                     </button>
 
-                    <!-- BIBTEX BUTTON -->
-                    <button class="btn btn-sm btn-outline-secondary" 
-                            data-bs-toggle="collapse" 
+                    <button class="btn btn-sm btn-secondary"
+                            data-bs-toggle="collapse"
                             data-bs-target="#bib1">
                         BibTeX
                     </button>
 
-                    <!-- PDF BUTTON -->
-                    <a href="#" target="_blank" class="btn btn-sm btn-outline-dark">
-                        PDF
-                    </a>
+                    <a href="#" target="_blank" class="btn btn-sm btn-dark">PDF</a>
 
-                    <!-- PAPER LINK BUTTON -->
-                    <a href="#" target="_blank" class="btn btn-sm btn-outline-success">
-                        Paper Link
-                    </a>
+                    <a href="#" target="_blank" class="btn btn-sm btn-success">Paper Link</a>
+
+                    <a href="#" target="_blank" class="btn btn-sm btn-info text-white">Code</a>
                 </div>
 
-                <!-- ===== COLLAPSIBLE ABSTRACT ===== -->
-                <div class="collapse mt-3" id="abs1">
-                    <div class="p-2 rounded" style="background:#f8f9fa; font-size:0.75rem; text-align:justify;">
-                        Your abstract goes here... Write 4–8 lines about the motivation,
-                        methodology, dataset, and contributions of this paper.
+                <!-- ====== COLLAPSIBLE SECTIONS WITH ACCORDION BEHAVIOR ====== -->
+                <div id="pub1">
+
+                    <!-- Abstract -->
+                    <div class="collapse mt-3" id="abs1" data-bs-parent="#pub1">
+                        <div class="p-2 rounded bg-white" style="font-size:0.75rem; text-align:justify;">
+                            Your abstract goes here… Write a short summary explaining the problem, methodology,
+                            models used, dataset details, and the major findings of the paper.
+                        </div>
                     </div>
-                </div>
 
-                <!-- ===== COLLAPSIBLE BIBTEX ===== -->
-                <div class="collapse mt-3" id="bib1">
-                    <div class="p-2 rounded" style="background:#f8f9fa; font-size:0.75rem; font-family: monospace;">
-                        @inproceedings{hossen2024strawberry,<br>
-                        &nbsp;&nbsp;title={Hybrid Machine Learning Approach Utilizing CNN Feature Extraction},<br>
-                        &nbsp;&nbsp;author={Hossen, Md Sabbir and Saha, Pabon and Saiduzzaman, Md},<br>
-                        &nbsp;&nbsp;booktitle={ECCE},<br>
-                        &nbsp;&nbsp;year={2024}<br>
-                        }
+                    <!-- BibTeX -->
+                    <div class="collapse mt-3" id="bib1" data-bs-parent="#pub1">
+                        <div class="p-2 rounded bg-white" style="font-size:0.75rem; font-family:monospace;">
+                            @inproceedings{hossen2024strawberry,<br>
+                            &nbsp;&nbsp;title={Hybrid Machine Learning Approach Utilizing CNN Feature Extraction},<br>
+                            &nbsp;&nbsp;author={Hossen, Md Sabbir and Saha, Pabon and Saiduzzaman, Md},<br>
+                            &nbsp;&nbsp;booktitle={ECCE},<br>
+                            &nbsp;&nbsp;year={2024}<br>
+                            }
+                        </div>
                     </div>
-                </div>
 
+                </div><!-- /pub1 -->
             </div>
         </div>
     </div>
 </div>
+
 
                  
 
