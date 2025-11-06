@@ -139,83 +139,57 @@
     </div>
 </div>
 
+                 
 <style>
-/* ---- Smooth Slide Animation ---- */
+/* Prevent image from growing when content expands */
+.pub-img-box {
+    flex: 0 0 auto; /* Prevent stretching */
+}
+
+.pub-img-box img {
+    height: 100%;
+    width: auto;
+    max-width: 220px;
+    object-fit: cover;
+}
+
+/* Right content should expand */
+.pub-content {
+    flex: 1 1 auto;
+}
+
+/* Toggle content style */
 .toggle-section {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease, padding 0.3s ease;
-    padding: 0 5px;
-}
-
-/* Active state */
-.toggle-section.open {
-    padding: 10px 5px;
-    max-height: 400px; /* Adjust depending on your content */
-}
-
-/* ---- Professional Academic Styling ---- */
-.pub-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.3;
-    color: #1a1a1a;
-}
-
-.pub-authors {
+    display: none;
     font-size: 0.75rem;
-    color: #444;
-}
-
-.pub-venue {
-    font-size: 0.75rem;
-    font-style: italic;
-    color: #333;
-}
-
-.pub-status {
-    color: #c62828;
-    font-weight: 700;
-}
-
-.btn-sm {
-    border-radius: 20px;
-    font-size: 0.68rem;
-    padding: 3px 10px;
-}
-
-/* Card enhancement */
-.pub-card {
-    border-left: 4px solid #0d6efd;
+    margin-top: 10px;
 }
 </style>
 
-
-<div class="card shadow border-0 rounded-4 mb-3 pub-card">
+<div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
 
-        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+        <div class="bg-light rounded-4 d-flex flex-row align-items-stretch" style="min-height: 120px;">
 
-            <!-- Left Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-start" src="assets/mmdg.png" alt="Project"
-                     style="height: 100%; width: auto; max-width: 200px; object-fit: cover;">
+            <!-- FIXED IMAGE AREA (stays same height) -->
+            <div class="pub-img-box d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/mmdg.png" alt="Project">
             </div>
 
-            <!-- Right Section -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+            <!-- EXPANDABLE TEXT SECTION -->
+            <div class="pub-content p-3 d-flex flex-column justify-content-center">
 
-                <p class="pub-title">
-                    An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
                 </p>
 
-                <p class="pub-authors">
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
                     <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
                 </p>
 
-                <p class="pub-venue">
-                    Journal of Visual Communication and Image Representation
-                    <span class="pub-status">[Under Review]</span>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
                 </p>
 
                 <!-- Buttons -->
@@ -227,16 +201,17 @@
                     <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">Code</button>
                 </div>
 
-                <!-- Toggle Sections -->
+                <!-- Toggle Sections (expand only right side) -->
                 <div id="abs2" class="toggle-section">
                     <b>Abstract:</b>
-                    <p style="font-size:0.75rem; text-align: justify;">
-                        Your abstract text will go here. Add the complete abstract for this paper.
+                    <p style="text-align: justify;">
+                        Your abstract text goes here. Add the complete abstract for this paper.
                     </p>
                 </div>
 
                 <div id="bib2" class="toggle-section">
-<pre style="font-size:0.7rem; background:#f1f3f5; padding:8px; border-radius:5px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
 @article{yourkey2025,
   title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
   author={Hossen, Md Sabbir and others},
@@ -265,17 +240,17 @@
 
 <script>
 function toggleSection(id) {
-    const all = document.querySelectorAll('.toggle-section');
-
-    all.forEach(sec => {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
         if (sec.id === id) {
-            sec.classList.toggle('open');
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
         } else {
-            sec.classList.remove('open');
+            sec.style.display = "none";
         }
     });
 }
 </script>
+
+
 
                  
 
