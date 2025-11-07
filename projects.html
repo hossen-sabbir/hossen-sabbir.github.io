@@ -160,30 +160,204 @@ function toggleSection(id) {
 
 
 
-                <div class="card shadow border-0 rounded-4 mb-2">
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b> Sophisticated Feature Vectorization-Based Stacked Machine Learning Approach for Fake News Detection in Bangla and English</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Fahmid Al Farid, Pabon Saha, Anichur Rahman, Abu Saleh Musa Miah et al.
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>Social Network Analysis and Mining</i> <span style="color: red;"><b>[Under Review]</b></span>
-                </p>
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
+
+                 
+<div class="card shadow border-0 rounded-4 mb-3">
+    <div class="card-body p-3">
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
+            </div>
+
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
+      
+
 <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
 
@@ -282,34 +456,106 @@ function toggleSection(id) {
 }
 </script>
 
-
-<div class="card shadow border-0 rounded-4 mb-2">
+<div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>ConvNet9: A Cutting-Edge Customized Convolutional Neural Network Model to Identify Potato Leaf Disease with Web Application</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                   Mohammad Shohel Parves, Pabon Saha, <b>Md Sabbir Hossen</b> and Bikash Kumar Paul et al.
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>Potato Research</i> <span style="color: red;"><b>[Under Review]</b></span>
-                </p>
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
                  
 
-<div class="card shadow border-0 rounded-4 mb-3">
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
 
         <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
@@ -407,130 +653,7 @@ function toggleSection(id) {
 }
 </script>
 
-<div class="card shadow border-0 rounded-4 mb-3">
-    <div class="card-body p-3">
-
-        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
-
-            <!-- Image Left -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
-                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
-            </div>
-
-            <!-- Text Content-->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>Journal of Visual Communication and Image Representation</i>
-                    <span style="color: red;"><b>[Under Review]</b></span>
-                </p>  
-                
-
-
-                <!-- Buttons -->
-                  <div class="mt-2 d-flex gap-2 flex-wrap">
-                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
-                        <i class="bi bi-card-text me-1"></i> Abstract
-                    </button>
-
-                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
-                        <i class="bi bi-braces me-1"></i> BibTeX
-                    </button>
-
-                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
-                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
-                    </button>
-
-                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
-                        <i class="bi bi-link-45deg me-1"></i> Paper Link
-                    </button>
-
-                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
-                        <i class="bi bi-code-slash me-1"></i> Code
-                    </button>
-                </div>
-
-                <!-- Hidden Content Sections -->
-                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <b>Abstract:</b>
-                    <p style="text-align: justify;">
-                        Your abstract text will go here. Add the complete abstract for this paper.
-                    </p>
-                </div>
-
-                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <b>BibTeX:</b>
-<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
-@article{yourkey2025,
-  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
-  author={Hossen, Md Sabbir and others},
-  journal={JVCI},
-  year={2025}
-}
-</pre>
-                </div>
-
-                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <a href="#" target="_blank">📄 Download PDF</a>
-                </div>
-
-                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <a href="#" target="_blank">🔗 View Paper</a>
-                </div>
-
-                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <a href="#" target="_blank">💻 Source Code</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
                  
-
-                <div class="card shadow border-0 rounded-4 mb-2">
-    <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>A Hybrid Machine Learning Approach Utiliz-ing CNN Feature Extraction with Traditional Classifier to Identify Strawberry Leaf Diseases.</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Pabon Saha, Md Saiduzzaman
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i> 4th International Conference on Electrical, Computer and Communication Engineering (ECCE)</i> <span style="color: red;"><b>[Accepted]</b></span>
-                </p>
-            </div>
-
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 220px; object-fit: cover;" />
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
 
@@ -616,42 +739,18 @@ function toggleSection(id) {
 
                  
 
-                <div class="card shadow border-0 rounded-4 mb-2">
-    <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, , Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>Journal of Visual Communication and Image Representation</i> <span style="color: red;"><b>[Under Review]</b></span>
-                </p>
-            </div>
-
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
-            </div>
-        </div>
-    </div>
-</div>
-<div class="card shadow border-0 rounded-4 mb-3">
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
 
         <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
 
             <!-- Image Left -->
             <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-start" src="assets/mmdg.png" alt="Project" 
-                     style="height: 100%; width: auto; max-width: 200px; object-fit: cover;">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Text Content -->
+            <!-- Text Content-->
             <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
                 <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
                     <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
@@ -662,15 +761,130 @@ function toggleSection(id) {
                 <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
                     <i>Journal of Visual Communication and Image Representation</i>
                     <span style="color: red;"><b>[Under Review]</b></span>
-                </p>
+                </p>  
+                
+
 
                 <!-- Buttons -->
-                <div class="mt-2 d-flex gap-2 flex-wrap">
-                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">Abstract</button>
-                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">BibTeX</button>
-                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">PDF</button>
-                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">Paper Link</button>
-                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">Code</button>
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
+
+                 
+<div class="card shadow border-0 rounded-4 mb-3">
+    <div class="card-body p-3">
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
+            </div>
+
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
                 </div>
 
                 <!-- Hidden Content Sections -->
@@ -724,108 +938,400 @@ function toggleSection(id) {
 
 
 
-                <div class="card shadow border-0 rounded-4 mb-2">
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Social Media Sentiments Analysis on the July Revolution in Bangladesh: A Hybrid Transformer Based Machine Learning Approach.</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Pabon Saha, Md Saiduzzaman
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>17thth International Conference on Electronics, Computers and Artificial Intelligence</i> <span style="color: red;"><b>[Accepted & Presented]</b></span>
-                </p>
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
-                <div class="card shadow border-0 rounded-4 mb-2">
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
+
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>An Explainable AI Driven Machine Learning Approach for Maternal Health Risk Analysis</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Pabon Saha, Md Saiduzzaman
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>27th International Conference on Computer and Information Technology (ICCIT)</i> <span style="color: red;"><b>[Accepted]</b></span>
-                </p>
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
 
 
-                <div class="card shadow border-0 rounded-4 mb-2">
+
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>An Explainable AI Driven Machine Learning Approach for Maternal Health Risk Analysis</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Pabon Saha, Md Saiduzzaman
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>27th International Conference on Computer and Information Technology (ICCIT)</i> <span style="color: red;"><b>[Accepted]</b></span>
-                </p>
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
 
-                <div class="card shadow border-0 rounded-4 mb-2">
+
+               <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
-        <div class="bg-light rounded-4 d-flex align-items-stretch" style="min-height: 100px;">
-            
-            <!-- Text Content -->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>An Explainable AI Driven Machine Learning Approach for Maternal Health Risk Analysis</b>
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b>, Pabon Saha, Md Saiduzzaman
-                </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
-                    <i>27th International Conference on Computer and Information Technology (ICCIT)</i> <span style="color: red;"><b>[Accepted]</b></span>
-                </p>
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="assets/Gen AI collage.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:270px; object-fit:cover;">
             </div>
 
-            <!-- Image -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-end" src="assets/mmdg.png" alt="Project" style="height: 100%; width: auto; max-width: 200px; object-fit: cover;" />
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>An Efficient Deep Learning Framework for Brain Stroke Diagnosis Using Computed Tomography (CT) Images</b>
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b>, Eshat Ahmed Shuvo, Pabon Shaha, Mostafa Kamal Nasir et al.
+                </p>
+                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                    <i>Journal of Visual Communication and Image Representation</i>
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                        Your abstract text will go here. Add the complete abstract for this paper.
+                    </p>
+                </div>
+
+                <div id="bib2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@article{yourkey2025,
+  title={An Efficient Deep Learning Framework for Brain Stroke Diagnosis},
+  author={Hossen, Md Sabbir and others},
+  journal={JVCI},
+  year={2025}
+}
+</pre>
+                </div>
+
+                <div id="pdf2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code2" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">💻 Source Code</a>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
 
 
 
