@@ -147,17 +147,7 @@ Fake News Detection in Bangla and English</b>
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
 
 
@@ -247,17 +237,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
                  
 <div class="card shadow border-0 rounded-4 mb-3">
@@ -347,16 +327,23 @@ function toggleSection(id) {
 </div>
 
 <script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
+function toggleSection(id, btn) {
+    const card = btn.closest(".card-body");
+    const sections = card.querySelectorAll('.toggle-section');
+
+    sections.forEach(sec => {
         if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+            sec.style.display =
+              (sec.style.display === "none" || sec.style.display === "") 
+              ? "block" 
+              : "none";
         } else {
             sec.style.display = "none";
         }
     });
 }
 </script>
+
       
 
 <div class="card shadow border-0 rounded-4 mb-3">
@@ -569,13 +556,13 @@ function toggleSection(id) {
 
             <!-- Text Content-->
             <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                <p style="font-size: 0.9rem; text-align: justify; margin-bottom: 0.4rem;">
                     <b>Optimized Hybrid Cascaded Approach for Accurate Oral Cancer Detection in Histopathology Images Using Deep CNNs</b>
                 </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin-bottom: 0.4rem;">
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
                     Eshat Ahmed Shuvo, Md. Shuvon, Md. Nazmul Sarkar, and <b>Md Sabbir Hossen</b> et al.
                 </p>
-                <p style="font-size: 0.7rem; text-align: justify; margin: 0;">
+                <p style="font-size: 0.8rem; text-align: justify; margin: 0;">
                     <i>IEEE 2nd International Conference on Next-Generation Computing, IoT and Machine Learning,</i> 2025
                   
                 </p>  
@@ -772,7 +759,7 @@ function toggleSection(id) {
                     <b>Explainable Machine Learning Framework for Cardiovascular Disease Diagnosis and Prognosis</b>
                 </p>
                 <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                   Md. Emon Akter Sourov, <b>Md Sabbir Hossen</b>, Pabon Shaha, and Muhammad Minoar Hossain et al.
+                   Md. Emon Akter Sourov, <b>Md Sabbir Hossen</b>, and Pabon Shaha et al.
                 </p>
                 <p style="font-size: 0.8rem; text-align: justify; margin: 0;">
                     <i>IEEE 2nd International Conference on Quantum Photonics, Artificial Intelligence, and Networking, </i> 2025
@@ -966,10 +953,10 @@ function toggleSection(id) {
             <!-- Text Content-->
             <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
                 <p style="font-size: 0.9rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>A Cutting-Edge Customized Convolutional Neural Network Model to Identify Potato Leaf Disease with Web Application</b>
+                    <b>ConvNet9: A Cutting-Edge Customized Convolutional Neural Network Model to Identify Potato Leaf Disease with Web Application</b>
                 </p>
                 <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    Mohammad Shohel Parves, Pabon Shaha, <b>Md Sabbir Hossen</b>, and Zohurul Islam Jibon et al.
+                    Mohammad Shohel Parves, Pabon Shaha, and <b>Md Sabbir Hossen</b> et al.
                 </p>
                 <p style="font-size: 0.8rem; text-align: justify; margin: 0;">
                     <span style="color: red;"><b>[Under Review in a Q2 Journal]</b></span>
