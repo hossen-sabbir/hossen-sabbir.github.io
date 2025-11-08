@@ -326,23 +326,6 @@ Fake News Detection in Bangla and English</b>
     </div>
 </div>
 
-<script>
-function toggleSection(id, btn) {
-    const card = btn.closest(".card-body");
-    const sections = card.querySelectorAll('.toggle-section');
-
-    sections.forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display =
-              (sec.style.display === "none" || sec.style.display === "") 
-              ? "block" 
-              : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
 
       
 
@@ -432,17 +415,7 @@ function toggleSection(id, btn) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
 <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
@@ -530,17 +503,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
                  
 
                <div class="card shadow border-0 rounded-4 mb-3">
@@ -629,17 +592,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
        
 
@@ -729,17 +682,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
                  
 <div class="card shadow border-0 rounded-4 mb-3">
@@ -828,17 +771,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
 
 
@@ -927,17 +860,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
                <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
@@ -1024,17 +947,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
 
 
@@ -1124,17 +1037,7 @@ function toggleSection(id) {
     </div>
 </div>
 
-<script>
-function toggleSection(id) {
-    document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
-            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
-        } else {
-            sec.style.display = "none";
-        }
-    });
-}
-</script>
+
 
 
                <div class="card shadow border-0 rounded-4 mb-3">
@@ -1224,6 +1127,25 @@ function toggleSection(id) {
 </div>
 
 <script>
+function toggleSection(id, btn) {
+    const card = btn.closest(".card-body");
+    const sections = card.querySelectorAll('.toggle-section');
+
+    sections.forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display =
+              (sec.style.display === "none" || sec.style.display === "") 
+              ? "block" 
+              : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
+<!--
+                 
+<script>
 function toggleSection(id) {
     document.querySelectorAll('.toggle-section').forEach(sec => {
         if (sec.id === id) {
@@ -1233,7 +1155,7 @@ function toggleSection(id) {
         }
     });
 }
-</script>
+</script> -->
 
 
 
