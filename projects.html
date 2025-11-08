@@ -89,23 +89,23 @@ Fake News Detection in Bangla and English</b>
 
                 <!-- Buttons -->
                   <div class="mt-2 d-flex gap-2 flex-wrap">
-                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs2')">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs1')">
                         <i class="bi bi-card-text me-1"></i> Abstract
                     </button>
 
-                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib2')">
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib1')">
                         <i class="bi bi-braces me-1"></i> BibTeX
                     </button>
 
-                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf2')">
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf1')">
                         <i class="bi bi-file-earmark-pdf me-1"></i> PDF
                     </button>
 
-                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper2')">
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper1')">
                         <i class="bi bi-link-45deg me-1"></i> Paper Link
                     </button>
 
-                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code2')">
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code1')">
                         <i class="bi bi-code-slash me-1"></i> Code
                     </button>
                 </div>
@@ -237,7 +237,17 @@ Fake News Detection in Bangla and English</b>
     </div>
 </div>
 
-
+<script>
+function toggleSection(id) {
+    document.querySelectorAll('.toggle-section').forEach(sec => {
+        if (sec.id === id) {
+            sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
+        } else {
+            sec.style.display = "none";
+        }
+    });
+}
+</script>
 
                  
 <div class="card shadow border-0 rounded-4 mb-3">
