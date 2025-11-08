@@ -1100,14 +1100,14 @@ function toggleSection(id) {
                 </div>
 
                 <!-- Hidden Content Sections -->
-                <div id="abs12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                <div id12="abs12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
                     <b>Abstract:</b>
                     <p style="text-align: justify;">
                         Your abstract text will go here. Add the complete abstract for this paper.
                     </p>
                 </div>
 
-                <div id="bib12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                <div id12="bib12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
                     <b>BibTeX:</b>
 <pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
 @article{yourkey2025,
@@ -1119,15 +1119,15 @@ function toggleSection(id) {
 </pre>
                 </div>
 
-                <div id="pdf12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                <div id12="pdf12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
                     <a href="#" target="_blank">📄 Download PDF</a>
                 </div>
 
-                <div id="paper12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                <div id12="paper12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
                     <a href="#" target="_blank">🔗 View Paper</a>
                 </div>
 
-                <div id="code12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                <div id12="code12" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
                     <a href="#" target="_blank">💻 Source Code</a>
                 </div>
 
@@ -1136,9 +1136,9 @@ function toggleSection(id) {
     </div>
 </div>
                  <script>
-function toggleSection(id) {
+function toggleSection(id12) {
     document.querySelectorAll('.toggle-section').forEach(sec => {
-        if (sec.id === id) {
+        if (sec.id === id12) {
             sec.style.display = (sec.style.display === "none" || sec.style.display === "") ? "block" : "none";
         } else {
             sec.style.display = "none";
@@ -1147,7 +1147,9 @@ function toggleSection(id) {
 }
 </script>
 
-<script>
+
+<!--
+   <script>
 function toggleSection(id, btn) {
     const card = btn.closest(".card-body");
     const sections = card.querySelectorAll('.toggle-section');
@@ -1163,9 +1165,7 @@ function toggleSection(id, btn) {
         }
     });
 }
-</script>
-<!--
-                 
+</script>              
  -->
 
 
