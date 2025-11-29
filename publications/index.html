@@ -1294,6 +1294,13 @@ function toggleSection(id) {
     });
 }
 </script>
+                 
+<script>
+function copyText(text) {
+    navigator.clipboard.writeText(text)
+        .catch(err => console.error("Copy failed", err));
+}
+</script>
 
 
 
