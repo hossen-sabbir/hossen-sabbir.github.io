@@ -808,9 +808,115 @@ publisher = {IEEE} }
 
 
 
-
-
                <div class="card shadow border-0 rounded-4 mb-3">
+    <div class="card-body p-3">
+
+        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
+
+            <!-- Image Left -->
+            <div class="d-flex align-items-center">
+                <img class="img-fluid rounded-start" src="/assets/DeepFake.png" alt="Project" 
+                     style="height:180px; width:auto; max-width:300px; object-fit:cover;">
+            </div>
+
+            <!-- Text Content-->
+            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
+                <p style="font-size: 0.9rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>TransCNN: A Hybrid CNN–Transformer Synergy for Reliable Deepfake Forensics</b>
+                </p>
+                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
+                    <b>Md Sabbir Hossen</b> and Md. Saiduzzaman.
+                </p>
+                <p style="font-size: 0.8rem; text-align: justify; margin: 0;">
+                    <i>28th International Conference on Computer and Information Technology (ICCIT),</i> 2025
+                    <span style="color: red;"><b>[Under Review]</b></span>
+                </p>  
+                
+
+
+                <!-- Buttons -->
+                  <div class="mt-2 d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs11')">
+                        <i class="bi bi-card-text me-1"></i> Abstract
+                    </button>
+
+                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib11')">
+                        <i class="bi bi-braces me-1"></i> BibTeX
+                    </button>
+
+                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf11')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
+                    </button>
+
+                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper11')">
+                        <i class="bi bi-link-45deg me-1"></i> Paper Link
+                    </button>
+
+                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code11')">
+                        <i class="bi bi-code-slash me-1"></i> Code
+                    </button>
+                </div>
+
+                <!-- Hidden Content Sections -->
+                <div id="abs11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>Abstract:</b>
+                    <p style="text-align: justify;">
+                       The rapid advancement of deepfake technology has raised serious concerns regarding digital authenticity, misinformation, and media trust. By enabling the creation of hyper-realistic manipulated media, deepfakes pose significant risks to security, privacy, and the integrity of digital communication. Social platforms are increasingly flooded with such AI-generated content, which can deceive human perception, spread misinformation, and undermine the credibility of multimedia information. Therefore, early detection of deepfakes is crucial. In this research, We focus on developing a robust detection framework to distinguish between genuine and artificially generated deepfake face images. For this purpose, a dataset of 12.2k authentic images was collected, and an additional 12.2k deepfake images were generated using a generative adversarial network (GAN), ensuring a balanced dataset for real versus fake image classification. We present a custom CNN-transformer hybrid framework, T-CNN, for deepfake detection. The proposed framework leverages convolutional layers for spatial feature extraction and transformer-based attention mechanisms to capture contextual dependencies within facial patterns. The experimental evaluation demonstrates that the custom CNN-transformer model achieves an exceptional accuracy of 99.3%. This study underscores the importance of hybrid deep learning approaches in addressing the growing challenge of deepfake detection and highlights their potential for safeguarding digital authenticity, particularly within the domain of facial image verification. 
+                    </p>
+                </div>
+
+                <div id="bib11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <b>BibTeX:</b>
+<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
+@inproceedings{Hossen2024TransCNN,
+  title={TransCNN: A Hybrid CNN–Transformer Synergy for Reliable 
+    Deepfake Forensics},
+  author={Hossen, Md. Sabbir and Saiduzzaman, Md.},
+  booktitle={2024 27th International Conference on Computer and 
+    Information Technology (ICCIT)},
+  year={2024},
+  address={Cox's Bazar, Bangladesh},
+  organization={IEEE}
+}
+</pre>
+                </div>
+
+                <div id="pdf11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="/Publication/DeepFake.pdf" target="_blank">📄 Download PDF</a>
+                </div>
+
+                <div id="paper11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a href="#" target="_blank">🔗 View Paper</a>
+                </div>
+
+                <div id="code11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
+                    <a>💻 Source Code will be made availble upon request. Please <a href="/contact/" target="_blank" style="color: blue; text-decoration: underline;">Contact</a> </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        
+
+
+                             <!--
+                 -->
+            
+            </section>
+                 
+             <section class="mt-5">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                        <i class="bi bi-journal-text"></i>
+                    </div>
+                    <h2 class="text-gradient d-inline">Under Review</h2>
+                </div>   
+
+
+                          <div class="card shadow border-0 rounded-4 mb-3">
     <div class="card-body p-3">
 
         <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
@@ -999,120 +1105,6 @@ application in addressing potato leaf diseases and diagnosing diseases of potato
     </div>
 </div>
 
-
-
-
-
-
-               <div class="card shadow border-0 rounded-4 mb-3">
-    <div class="card-body p-3">
-
-        <div class="bg-light rounded-4 d-flex align-items-stretch flex-row" style="min-height: 120px;">
-
-            <!-- Image Left -->
-            <div class="d-flex align-items-center">
-                <img class="img-fluid rounded-start" src="/assets/DeepFake.png" alt="Project" 
-                     style="height:180px; width:auto; max-width:300px; object-fit:cover;">
-            </div>
-
-            <!-- Text Content-->
-            <div class="p-3 flex-grow-1 d-flex flex-column justify-content-center">
-                <p style="font-size: 0.9rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>TransCNN: A Hybrid CNN–Transformer Synergy for Reliable Deepfake Forensics</b>
-                </p>
-                <p style="font-size: 0.8rem; text-align: justify; margin-bottom: 0.4rem;">
-                    <b>Md Sabbir Hossen</b> and Md. Saiduzzaman.
-                </p>
-                <p style="font-size: 0.8rem; text-align: justify; margin: 0;">
-                    <i>28th International Conference on Computer and Information Technology (ICCIT),</i> 2025
-                    <span style="color: red;"><b>[Under Review]</b></span>
-                </p>  
-                
-
-
-                <!-- Buttons -->
-                  <div class="mt-2 d-flex gap-2 flex-wrap">
-                    <button class="btn btn-sm btn-primary" onclick="toggleSection('abs11')">
-                        <i class="bi bi-card-text me-1"></i> Abstract
-                    </button>
-
-                    <button class="btn btn-sm btn-secondary" onclick="toggleSection('bib11')">
-                        <i class="bi bi-braces me-1"></i> BibTeX
-                    </button>
-
-                    <button class="btn btn-sm btn-success" onclick="toggleSection('pdf11')">
-                        <i class="bi bi-file-earmark-pdf me-1"></i> PDF
-                    </button>
-
-                    <button class="btn btn-sm btn-info" onclick="toggleSection('paper11')">
-                        <i class="bi bi-link-45deg me-1"></i> Paper Link
-                    </button>
-
-                    <button class="btn btn-sm btn-warning" onclick="toggleSection('code11')">
-                        <i class="bi bi-code-slash me-1"></i> Code
-                    </button>
-                </div>
-
-                <!-- Hidden Content Sections -->
-                <div id="abs11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <b>Abstract:</b>
-                    <p style="text-align: justify;">
-                       The rapid advancement of deepfake technology has raised serious concerns regarding digital authenticity, misinformation, and media trust. By enabling the creation of hyper-realistic manipulated media, deepfakes pose significant risks to security, privacy, and the integrity of digital communication. Social platforms are increasingly flooded with such AI-generated content, which can deceive human perception, spread misinformation, and undermine the credibility of multimedia information. Therefore, early detection of deepfakes is crucial. In this research, We focus on developing a robust detection framework to distinguish between genuine and artificially generated deepfake face images. For this purpose, a dataset of 12.2k authentic images was collected, and an additional 12.2k deepfake images were generated using a generative adversarial network (GAN), ensuring a balanced dataset for real versus fake image classification. We present a custom CNN-transformer hybrid framework, T-CNN, for deepfake detection. The proposed framework leverages convolutional layers for spatial feature extraction and transformer-based attention mechanisms to capture contextual dependencies within facial patterns. The experimental evaluation demonstrates that the custom CNN-transformer model achieves an exceptional accuracy of 99.3%. This study underscores the importance of hybrid deep learning approaches in addressing the growing challenge of deepfake detection and highlights their potential for safeguarding digital authenticity, particularly within the domain of facial image verification. 
-                    </p>
-                </div>
-
-                <div id="bib11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <b>BibTeX:</b>
-<pre style="font-size:0.7rem; background:#f8f9fa; padding:8px; border-radius:5px;">
-@inproceedings{Hossen2024TransCNN,
-  title={TransCNN: A Hybrid CNN–Transformer Synergy for Reliable 
-    Deepfake Forensics},
-  author={Hossen, Md. Sabbir and Saiduzzaman, Md.},
-  booktitle={2024 27th International Conference on Computer and 
-    Information Technology (ICCIT)},
-  year={2024},
-  address={Cox's Bazar, Bangladesh},
-  organization={IEEE}
-}
-</pre>
-                </div>
-
-                <div id="pdf11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <a href="/Publication/DeepFake.pdf" target="_blank">📄 Download PDF</a>
-                </div>
-
-                <div id="paper11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <a href="#" target="_blank">🔗 View Paper</a>
-                </div>
-
-                <div id="code11" class="toggle-section" style="display:none; font-size:0.75rem; margin-top:10px;">
-                    <a>💻 Source Code will be made availble upon request. Please <a href="/contact/" target="_blank" style="color: blue; text-decoration: underline;">Contact</a> </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-        
-
-
-                             <!--
-                 -->
-            
-            </section>
-                 
-             <section class="mt-5">
-                <div class="d-flex align-items-center mb-4">
-                    <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
-                        <i class="bi bi-journal-text"></i>
-                    </div>
-                    <h2 class="text-gradient d-inline">Under Review</h2>
-                </div>   
-
-
-                 
 
 
                <div class="card shadow border-0 rounded-4 mb-3">
