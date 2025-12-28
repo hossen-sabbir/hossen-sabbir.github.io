@@ -11757,6 +11757,14 @@ li p {
 
 
 
+.toggle-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
 
 
 
