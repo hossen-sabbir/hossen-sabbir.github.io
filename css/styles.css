@@ -11765,6 +11765,19 @@ li p {
 [aria-expanded="true"] .toggle-icon {
     transform: rotate(180deg);
 }
+/* Hover effect on Latest News title */
+#news h2[role="button"] {
+    cursor: pointer; /* show pointer */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* small blink / pulse animation on hover */
+#news h2[role="button"]:hover {
+    color: #ff7f50; /* change color subtly */
+    transform: scale(1.03); /* slightly grow */
+    text-shadow: 0 0 5px rgba(255,127,80,0.6); /* subtle glow */
+}
 
 
 
