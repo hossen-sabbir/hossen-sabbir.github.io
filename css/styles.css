@@ -11786,6 +11786,9 @@ li p {
 
 
 
+h2 + p {
+    margin-top: -0.25rem;
+}
 
 
 
