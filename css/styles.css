@@ -11810,3 +11810,228 @@ li p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MOBILE RESPONSIVE OPTIMIZATION
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Prevent horizontal scrolling */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Header Section */
+    header {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .display-3 {
+        font-size: 2.2rem !important;
+        line-height: 1.2;
+    }
+
+    .display-5 {
+        font-size: 2rem !important;
+    }
+
+    .fs-3 {
+        font-size: 1.1rem !important;
+    }
+
+    .badge .text-uppercase {
+        font-size: 0.65rem;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    /* Social links */
+    .d-flex.justify-content-start.fs-2.gap-4 {
+        justify-content: center !important;
+        flex-wrap: wrap;
+        gap: 1rem !important;
+    }
+
+    /* Buttons */
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .d-grid.gap-3.d-sm-flex {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    /* Profile image */
+    .profile {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: auto;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Hide decorative dots on mobile */
+    .dots-1,
+    .dots-2,
+    .dots-3,
+    .dots-4 {
+        display: none;
+    }
+
+    /* About section text */
+    p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    h3 {
+        font-size: 1.5rem !important;
+    }
+
+    /* News Section */
+    .timeline-content {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .timeline-content .card-body p {
+        font-size: 0.85rem !important;
+        line-height: 1.6;
+    }
+
+    /* Latest News title */
+    #news h2 {
+        font-size: 2rem !important;
+        text-align: center;
+    }
+
+    /* Footer */
+    footer .row {
+        text-align: center;
+        gap: 0.7rem;
+    }
+
+    footer .col-auto {
+        width: 100%;
+    }
+
+    /* Reduce container padding */
+    .container,
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+/* =========================================
+   EXTRA SMALL DEVICES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .display-3 {
+        font-size: 1.8rem !important;
+    }
+
+    .display-5 {
+        font-size: 1.7rem !important;
+    }
+
+    .fs-3 {
+        font-size: 1rem !important;
+    }
+
+    .badge {
+        width: 100%;
+        white-space: normal;
+    }
+
+    .profile {
+        max-width: 260px;
+    }
+
+    .timeline-content .card-body p {
+        font-size: 0.8rem !important;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}v
