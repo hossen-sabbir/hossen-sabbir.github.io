@@ -12192,3 +12192,44 @@ li p {
         font-size: 0.65rem !important;
     }
 }
+
+
+
+
+
+
+
+/* =========================================
+   MOBILE WARNING MESSAGE
+   ========================================= */
+
+#mobile-warning{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.9);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    z-index: 99999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 4s;
+}
+
+/* Hide on desktop */
+@media (min-width: 769px){
+    #mobile-warning{
+        display: none;
+    }
+}
+
+@keyframes fadeOut{
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
