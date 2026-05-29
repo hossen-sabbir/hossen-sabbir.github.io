@@ -5,3 +5,12 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+
+<script>
+setTimeout(() => {
+    const warning = document.getElementById("mobile-warning");
+    if(warning){
+        warning.style.display = "none";
+    }
+}, 5000);
+</script>
