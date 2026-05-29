@@ -12034,4 +12034,161 @@ li p {
     p {
         font-size: 0.9rem;
     }
-}v
+}
+
+
+/* =========================================
+   PUBLICATIONS PAGE MOBILE OPTIMIZATION
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Main container spacing */
+    .container-fluid {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    /* Publications heading section */
+    .feature {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .feature i {
+        font-size: 1.2rem;
+    }
+
+    h2.text-gradient {
+        font-size: 2rem !important;
+    }
+
+    /* Publication cards */
+    .card {
+        border-radius: 1rem !important;
+    }
+
+    /* IMPORTANT:
+       Change horizontal layout to vertical */
+    .card .bg-light {
+        flex-direction: column !important;
+    }
+
+    /* Publication images */
+    .card img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        border-radius: 1rem 1rem 0 0 !important;
+        object-fit: cover;
+    }
+
+    /* Text area */
+    .card .p-3 {
+        padding: 1rem !important;
+    }
+
+    /* Title */
+    .card p:first-child {
+        font-size: 1rem !important;
+        line-height: 1.5;
+    }
+
+    /* Authors + conference */
+    .card p:nth-child(2),
+    .card p:nth-child(3) {
+        font-size: 0.85rem !important;
+        line-height: 1.6;
+    }
+
+    /* Buttons section */
+    .card .d-flex.gap-2 {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 0.5rem !important;
+    }
+
+    /* Buttons mobile sizing */
+    .card .btn {
+        flex: 1 1 calc(50% - 0.5rem);
+        font-size: 0.75rem !important;
+        padding: 0.5rem 0.6rem !important;
+        text-align: center;
+    }
+
+    /* Abstract / BibTex / PDF sections */
+    .toggle-section {
+        margin-top: 1rem !important;
+        overflow-x: auto;
+    }
+
+    .toggle-section p {
+        font-size: 0.82rem !important;
+        line-height: 1.7;
+    }
+
+    /* BibTeX code block */
+    pre {
+        white-space: pre-wrap !important;
+        word-wrap: break-word !important;
+        overflow-x: auto !important;
+        font-size: 0.7rem !important;
+    }
+
+    /* Collaboration section */
+    .display-6 {
+        font-size: 1.8rem !important;
+    }
+
+    .btn-lg {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer .row {
+        text-align: center;
+        gap: 0.7rem;
+    }
+
+    footer .col-auto {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   EXTRA SMALL DEVICES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    h2.text-gradient {
+        font-size: 1.7rem !important;
+    }
+
+    .display-6 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Publication title */
+    .card p:first-child {
+        font-size: 0.95rem !important;
+    }
+
+    /* Buttons become full width */
+    .card .btn {
+        flex: 1 1 100%;
+    }
+
+    /* Smaller text */
+    .card p,
+    .toggle-section p {
+        font-size: 0.8rem !important;
+    }
+
+    pre {
+        font-size: 0.65rem !important;
+    }
+}
