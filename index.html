@@ -336,10 +336,10 @@
     </li>
 
     <li>
-      <span class="news-date">May 2023</span>
+      <span class="news-date">Sep 2025</span>
       <div class="news-content">
         Appointed as a Research Assistant at
-        <strong>National Institute of Textile Engineering and Research.</strong>
+        <strong style="color: #00a6c7;">National Institute of Textile Engineering and Research.</strong>
       </div>
     </li>
 
@@ -421,15 +421,19 @@
       </div>
     </li>
 
-    <li>
-      <span class="news-date">May 2023</span>
-      <div class="news-content">
+
+<li class="hidden-news">
+    <span class="news-date">May 2023</span>
+    <div class="news-content">
         Appointed as an Undergraduate Research Assistant at
         <strong style="color: #00a6c7;">NextGen AI Lab, Bangladesh University.</strong>
-      </div>
-    </li>
+    </div>
+</li>
 
   </ul>
+  <button id="showMoreNews" class="show-more-btn" onclick="showMoreNews()">
+    Show More
+</button>
 </section>
 
 
@@ -456,6 +460,19 @@
     </div>
 </footer>
 
+
+  <script>
+function showMoreNews() {
+    const hiddenNews = document.querySelectorAll('.hidden-news');
+    const button = document.getElementById('showMoreNews');
+
+    hiddenNews.forEach(function(item) {
+        item.style.display = 'grid';
+    });
+
+    button.style.display = 'none';
+}
+</script>
 <script src="/assets/js/main.js"></script>
 </body>
 </html>
