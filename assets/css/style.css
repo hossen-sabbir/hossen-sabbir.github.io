@@ -21,7 +21,6 @@
 }
 
 
-
 /* ================================
    HERO / COVER IMAGE
    ================================ */
@@ -49,6 +48,46 @@
 @media (max-width: 768px) {
 
   .hero {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    object-position: center center;
+  }
+
+}
+/* ================================
+   HERO / COVER IMAGE
+  
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ 
+
+@media (max-width: 768px) {
+
+  .hero {
     height: 220px;
   }
 
@@ -59,7 +98,7 @@
     object-position: center center;
   }
 
-}
+}  ================================ */
 
 /* Profile section */
 .profile {
