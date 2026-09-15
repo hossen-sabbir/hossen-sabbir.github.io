@@ -1345,7 +1345,7 @@ nav a.current-page::after {
 
 
 /* =========================================
-   LIGHT / DARK MODE TOGGLE BUTTON
+   THEME TOGGLE BUTTON
    ========================================= */
 
 .theme-toggle {
@@ -1376,121 +1376,167 @@ nav a.current-page::after {
     transform: scale(1.08);
 }
 
+
 /* =========================================
-   DARK MODE - FULL PAGE
+   DARK MODE
    ========================================= */
 
 body.dark-theme {
-    background: #111827 !important;
-    color: #fff !important;
+    background-color: #293754 !important;
+    color: #ffffff !important;
 }
 
 
-/* Main page/container backgrounds */
+/* =========================================
+   ENTIRE PAGE
+   ========================================= */
 
 body.dark-theme main,
 body.dark-theme .page,
 body.dark-theme .container,
-body.dark-theme .container-fluid {
-    background-color: #111827 !important;
-    color: #fff !important;
+body.dark-theme .container-fluid,
+body.dark-theme section {
+    background-color: #293754 !important;
+    color: #ffffff !important;
 }
 
 
-/* Navigation */
+/* =========================================
+   HEADER / NAVIGATION
+   Slightly lighter than main background
+   ========================================= */
 
-body.dark-theme nav {
-    background-color: #111827 !important;
+body.dark-theme header,
+body.dark-theme nav,
+body.dark-theme .navbar {
+    background-color: #354666 !important;
+    color: #ffffff !important;
 }
 
-body.dark-theme nav a {
-    color: #fff !important;
+body.dark-theme nav a,
+body.dark-theme .navbar a {
+    color: #ffffff !important;
 }
 
 body.dark-theme nav a.current-page {
-    color: #fff !important;
-}
-
-
-/* Footer */
-
-body.dark-theme footer {
-    background-color: #111827 !important;
-    color: #fff !important;
-}
-
-/* =========================================
-   KEEP EXISTING BOX COLORS
-   ========================================= */
-
-/*
-   IMPORTANT:
-   Do NOT change the background of cards,
-   colored boxes, badges, research boxes, etc.
-*/
-
-body.dark-theme .card {
-    color: #fff !important;
-}
-
-
-/* Keep the existing background colors */
-body.dark-theme .card-body {
-    color: #fff !important;
-}
-
-
-/* Text inside boxes */
-
-body.dark-theme .card h1,
-body.dark-theme .card h2,
-body.dark-theme .card h3,
-body.dark-theme .card h4,
-body.dark-theme .card h5,
-body.dark-theme .card h6,
-body.dark-theme .card p,
-body.dark-theme .card span,
-body.dark-theme .card li,
-body.dark-theme .card div {
-    color: #fff !important;
-}
-
-
-/* Publication content */
-
-body.dark-theme .publication-title {
-    color: #fff !important;
-}
-
-body.dark-theme .publication-authors,
-body.dark-theme .publication-venue,
-body.dark-theme .publication-content {
-    color: #fff !important;
-}
-
-
-/* =========================================
-   TOGGLE BUTTON IN DARK MODE
-   ========================================= */
-
-body.dark-theme .theme-toggle {
-    background: #fff;
-    border-color: #fff;
-    color: #222;
+    color: #ffffff !important;
 }
 
 
 /* =========================================
    FOOTER
+   Slightly lighter than main background
    ========================================= */
 
 body.dark-theme footer {
-    background-color: #000 !important;
-    color: #fff !important;
+    background-color: #354666 !important;
+    color: #ffffff !important;
 }
 
 body.dark-theme footer a {
-    color: #fff !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   CARDS
+   ========================================= */
+
+body.dark-theme .card {
+    background-color: #293754 !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .card-body {
+    background-color: #293754 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   PUBLICATION CARDS
+   ========================================= */
+
+body.dark-theme .publication-card {
+    background-color: #293754 !important;
+    color: #ffffff !important;
+}
+
+body.dark-theme .publication-content {
+    color: #ffffff !important;
+}
+
+body.dark-theme .publication-title {
+    color: #ffffff !important;
+}
+
+body.dark-theme .publication-authors {
+    color: #ffffff !important;
+}
+
+body.dark-theme .publication-venue {
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   RESEARCH GRID
+   Keep exactly your existing color
+   ========================================= */
+
+body.dark-theme .research-grid {
+    background: #293754 !important;
+}
+
+body.dark-theme .research-grid h3,
+body.dark-theme .research-grid p {
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   ALL TEXT
+   ========================================= */
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p,
+body.dark-theme li,
+body.dark-theme span {
+    color: #ffffff !important;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+body.dark-theme a {
+    color: #b9c9ff;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+body.dark-theme button:not(.theme-toggle) {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   THEME TOGGLE IN DARK MODE
+   ========================================= */
+
+body.dark-theme .theme-toggle {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #293754;
 }
 
 
