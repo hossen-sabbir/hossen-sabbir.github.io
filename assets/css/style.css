@@ -206,7 +206,7 @@ section h2,
 .research-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: #1b253a; /* Darker shade of the original blue-gray */
+    background: #17202e; /* Darker shade of the original blue-gray */
     color: #ffffff;      /* Makes the text white */
     padding: 25px;
     gap: 28px;
@@ -1368,15 +1368,14 @@ nav a.current-page::after {
 .theme-toggle {
     width: 32px;
     height: 32px;
-
     padding: 0;
     margin: 0 8px 0 0;
 
-    border: 1.5px solid currentColor;
+    border: 1.5px solid #222;
     border-radius: 50%;
 
     background: transparent;
-    color: #222;
+    color: #fff;
 
     font-size: 18px;
     line-height: 1;
@@ -1387,7 +1386,6 @@ nav a.current-page::after {
 
     cursor: pointer;
     vertical-align: middle;
-
     flex-shrink: 0;
 
     transition: all 0.2s ease;
@@ -1400,56 +1398,42 @@ nav a.current-page::after {
 
 /* =========================================
    DARK MODE
+   ONE COLOR THROUGHOUT THE WEBSITE
    ========================================= */
 
-/* Entire website body */
 body.dark-theme {
-    background-color: #000022 !important;
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
 
 /* =========================================
-   FULL HEADER
-   EVERYTHING = #000033
+   HEADER
    ========================================= */
 
 body.dark-theme header,
 body.dark-theme .header,
 body.dark-theme .site-header,
 body.dark-theme .top-header {
-    background-color: #000033 !important;
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
 
-/* Header's internal areas */
+/* Header content */
 body.dark-theme header *,
 body.dark-theme .header *,
 body.dark-theme .site-header *,
 body.dark-theme .top-header * {
-    border-color: rgba(255, 255, 255, 0.25);
+    background-color: transparent;
 }
 
 
-/* Brand */
+/* Brand / title */
 body.dark-theme .brand,
 body.dark-theme .brand a,
 body.dark-theme .brand-name,
 body.dark-theme .brand-title {
-    color: #ffffff !important;
-}
-
-
-/* Header text */
-body.dark-theme header h1,
-body.dark-theme header h2,
-body.dark-theme header h3,
-body.dark-theme header h4,
-body.dark-theme header h5,
-body.dark-theme header h6,
-body.dark-theme header p,
-body.dark-theme header span {
     color: #ffffff !important;
 }
 
@@ -1459,7 +1443,7 @@ body.dark-theme header span {
    ========================================= */
 
 body.dark-theme nav {
-    background-color: #000033 !important;
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
@@ -1471,8 +1455,6 @@ body.dark-theme nav a.current-page {
     color: #ffffff !important;
 }
 
-
-/* Mobile menu button */
 body.dark-theme .menu-toggle {
     color: #ffffff !important;
     background: transparent !important;
@@ -1480,7 +1462,7 @@ body.dark-theme .menu-toggle {
 
 
 /* =========================================
-   MAIN WEBSITE BODY
+   BODY
    ========================================= */
 
 body.dark-theme main,
@@ -1488,7 +1470,7 @@ body.dark-theme .page,
 body.dark-theme .container,
 body.dark-theme .container-fluid,
 body.dark-theme section {
-    background-color: #000022 !important;
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
@@ -1499,7 +1481,7 @@ body.dark-theme section {
 
 body.dark-theme .card,
 body.dark-theme .card-body {
-    background-color: #000022 !important;
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
@@ -1508,12 +1490,12 @@ body.dark-theme .card-body {
    PUBLICATIONS
    ========================================= */
 
-body.dark-theme .publication-card {
-    background-color: #000022 !important;
+body.dark-theme .publication-card,
+body.dark-theme .publication-content {
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
-body.dark-theme .publication-content,
 body.dark-theme .publication-title,
 body.dark-theme .publication-authors,
 body.dark-theme .publication-venue {
@@ -1523,11 +1505,12 @@ body.dark-theme .publication-venue {
 
 /* =========================================
    RESEARCH GRID
-   KEEP ORIGINAL COLOR
+   ALSO SAME DARK GRAY
    ========================================= */
 
 body.dark-theme .research-grid {
-    background: #293754 !important;
+    background: #252525 !important;
+    color: #ffffff !important;
 }
 
 body.dark-theme .research-grid h3,
@@ -1537,7 +1520,7 @@ body.dark-theme .research-grid p {
 
 
 /* =========================================
-   GENERAL TEXT
+   ALL TEXT
    ========================================= */
 
 body.dark-theme h1,
@@ -1554,47 +1537,45 @@ body.dark-theme span {
 
 
 /* =========================================
-   LINKS
-   ========================================= */
-
-body.dark-theme a {
-    color: #b9d7ff;
-}
-
-
-/* =========================================
-   FULL FOOTER
-   EVERYTHING = #000033
+   FOOTER
    ========================================= */
 
 body.dark-theme footer,
 body.dark-theme .footer,
 body.dark-theme .site-footer {
-    background-color: #000033 !important;
+    background-color: #252525 !important;
     color: #ffffff !important;
 }
 
-
-/* Footer internal content */
 body.dark-theme footer *,
 body.dark-theme .footer *,
 body.dark-theme .site-footer * {
     color: #ffffff !important;
+    background-color: transparent;
 }
 
 
 /* =========================================
-   THEME ICON
+   LINKS
    ========================================= */
 
-/* Normal/light mode: WHITE icon */
-.theme-toggle {
+body.dark-theme a {
     color: #ffffff;
-    border-color: #ffffff;
 }
 
 
-/* Dark mode: BLACK icon */
+/* =========================================
+   DARK MODE ICON
+   ========================================= */
+
+/* Normal mode */
+.theme-toggle {
+    color: #ffffff;
+    border-color: #ffffff;
+    background: transparent;
+}
+
+/* Dark mode */
 body.dark-theme .theme-toggle {
     color: #000000 !important;
     border-color: #000000 !important;
@@ -1611,9 +1592,7 @@ body.dark-theme .theme-toggle {
     .theme-toggle {
         width: 30px;
         height: 30px;
-
         font-size: 17px;
-
         margin: 0 6px 0 0;
     }
 
