@@ -1508,15 +1508,6 @@ body.dark-theme .publication-venue {
    ALSO SAME DARK GRAY
    ========================================= */
 
-body.dark-theme .research-grid {
-    background: #252525 !important;
-    color: #ffffff !important;
-}
-
-body.dark-theme .research-grid h3,
-body.dark-theme .research-grid p {
-    color: #ffffff !important;
-}
 
 
 /* =========================================
@@ -1594,6 +1585,69 @@ body.dark-theme .theme-toggle {
         height: 30px;
         font-size: 17px;
         margin: 0 6px 0 0;
+    }
+
+}
+
+
+/* =========================================
+   THEME BUTTON - NAVIGATION ITEM
+   ========================================= */
+
+nav .theme-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    margin: 0 8px 0 0;
+    padding: 0;
+
+    border: 1.5px solid #222;
+    border-radius: 50%;
+
+    background: transparent;
+    color: #222;
+
+    font-size: 18px;
+    line-height: 1;
+
+    cursor: pointer;
+    vertical-align: middle;
+
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
+/* Dark mode icon */
+body.dark-theme nav .theme-toggle {
+    color: #000000 !important;
+    border-color: #000000 !important;
+    background: transparent !important;
+}
+
+
+/* Normal mode icon */
+body:not(.dark-theme) nav .theme-toggle {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    background: transparent !important;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    nav .theme-toggle {
+        width: 30px;
+        height: 30px;
+
+        margin: 0 6px 0 0;
+
+        font-size: 17px;
     }
 
 }
