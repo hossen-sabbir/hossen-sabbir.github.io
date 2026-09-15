@@ -707,12 +707,11 @@ footer {
     }
 }
 
-
-.hidden-news {
+.news li.hidden-news {
     display: none !important;
 }
 
-.hidden-news.show {
+.news li.hidden-news.show {
     display: grid !important;
 }
 
