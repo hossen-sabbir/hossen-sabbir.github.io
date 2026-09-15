@@ -834,52 +834,66 @@ nav a.current-page::after {
 
 
 
-
 /* =========================================
-   PUBLICATIONS - MOBILE RESPONSIVE
-   Desktop remains completely unchanged
+   PUBLICATIONS - MOBILE ONLY
    ========================================= */
 
 @media (max-width: 768px) {
 
-    /* Make publication container wider on mobile */
-    .publications-container {
+    /* Wider publication page on mobile */
+    .publications-page {
         width: 95%;
-        max-width: none;
+        max-width: 95%;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    /* Publication card */
-    .publication-card {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    /* Publication image */
-    .publication-image img {
-        width: 100%;
-        max-width: 110px;
+    /* Smaller publication image */
+    .publications-page .publication-image img {
+        width: 130px;
+        max-width: 130px;
         height: auto;
-        object-fit: contain;
     }
 
-    /* Publication text */
-    .publication-content {
-        font-size: 13px;
-    }
-
-    .publication-content h3,
-    .publication-content h4,
-    .publication-content .title {
+    /* Smaller publication text */
+    .publications-page .publication-title {
         font-size: 15px;
         line-height: 1.35;
     }
 
-    .publication-content p {
+    .publications-page .publication-authors {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .publications-page .publication-venue {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* Smaller abstract text */
+    .publications-page .toggle-section {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .publications-page .toggle-section p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    /* Smaller buttons */
+    .publications-page .pub-btn {
+        font-size: 11px;
+        padding: 5px 8px;
+    }
+
+    /* Smaller intro text */
+    .publications-page .intro {
         font-size: 13px;
-        line-height: 1.45;
+        line-height: 1.5;
     }
 
 }
