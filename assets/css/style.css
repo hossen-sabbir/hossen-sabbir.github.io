@@ -827,3 +827,59 @@ nav a.current-page::after {
 
     transition: none !important;
 }
+
+
+
+
+
+
+
+
+/* =========================================
+   PUBLICATIONS - MOBILE RESPONSIVE
+   Desktop remains completely unchanged
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Make publication container wider on mobile */
+    .publications-container {
+        width: 95%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Publication card */
+    .publication-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Publication image */
+    .publication-image img {
+        width: 100%;
+        max-width: 110px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Publication text */
+    .publication-content {
+        font-size: 13px;
+    }
+
+    .publication-content h3,
+    .publication-content h4,
+    .publication-content .title {
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .publication-content p {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+
+}
