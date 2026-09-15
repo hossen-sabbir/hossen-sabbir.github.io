@@ -235,10 +235,10 @@
       <h3 style="font-size: 14px; font-weight: bold;">Natural Language Processing</h3>
       <ul style="font-size: 13px; padding-left: 13px; list-style-position: outside;">
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          Low-resource and multilingual NLP
+          Large Language Models (LLMs)
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          Language understanding and text classification
+        Information Extraction and Text Understanding
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
           Misinformation and machine-generated text detection
@@ -254,10 +254,10 @@
           Visual representation learning
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          Deepfake detection and visual forensics
+          Deepfake &amp; Multimedia Forensics
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          AI for healthcare and medical image analysis
+          AI for healthcare &amp; medical imaging
         </li>
       </ul>
     </article>
@@ -273,7 +273,7 @@
           Multimodal representation learning
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          Vision-language understanding and reasoning
+          Multimodal for Healthcare &amp; Generative AI
         </li>
       </ul>
     </article>
@@ -286,10 +286,10 @@
           Efficient deep learning architectures
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          Model compression and optimiza&shy;tion
+          Low Resource &amp; Multilingual Languages
         </li>
         <li style="text-align: justify; overflow-wrap: break-word; hyphens: auto;">
-          Resource-constrained and low-resource AI
+         AI for low-resource Settings
         </li>
       </ul>
     </article>
@@ -431,7 +431,7 @@
 </li>
 
   </ul>
-  <button id="showMoreNews" class="show-more-btn" onclick="showMoreNews()">
+<button id="showMoreNews" class="show-more-btn" onclick="toggleNews()">
     Show More
 </button>
 </section>
@@ -461,16 +461,22 @@
 </footer>
 
 
-  <script>
-function showMoreNews() {
+ <script>
+function toggleNews() {
     const hiddenNews = document.querySelectorAll('.hidden-news');
     const button = document.getElementById('showMoreNews');
 
+    const isExpanded = hiddenNews[0].classList.contains('show');
+
     hiddenNews.forEach(function(item) {
-        item.style.display = 'grid';
+        if (isExpanded) {
+            item.classList.remove('show');
+        } else {
+            item.classList.add('show');
+        }
     });
 
-    button.style.display = 'none';
+    button.textContent = isExpanded ? 'Show More' : 'Show Less';
 }
 </script>
 <script src="/assets/js/main.js"></script>
