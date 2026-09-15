@@ -842,19 +842,25 @@ nav a.current-page::after {
 
     /* Wider publication page on mobile */
     .publications-page {
-        width: 95%;
-        max-width: 95%;
+        width: 98%;
+        max-width: 98%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 0;
         padding-right: 0;
     }
 
-    /* Smaller publication image */
+    .publications-page .publication-image {
+        border-radius: 0 !important;
+        overflow: hidden;
+    }
+
     .publications-page .publication-image img {
-        width: 130px;
-        max-width: 130px;
-        height: auto;
+        width: 200px;
+        height: 200px;
+        max-width: 200px;
+        object-fit: cover;
+        border-radius: 0 !important;
     }
 
     /* Smaller publication text */
