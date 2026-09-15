@@ -1364,16 +1364,17 @@ nav a.current-page::after {
 .theme-toggle {
     width: 32px;
     height: 32px;
+
     padding: 0;
     margin: 0 8px 0 0;
 
-    border: 1.5px solid #222;
+    border: 1.5px solid currentColor;
     border-radius: 50%;
 
-    background: #222;
-    color: #fff;
+    background: transparent;
+    color: #222;
 
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1;
 
     display: inline-flex;
@@ -1381,53 +1382,55 @@ nav a.current-page::after {
     justify-content: center;
 
     cursor: pointer;
-    transition: all 0.25s ease;
     vertical-align: middle;
+
+    flex-shrink: 0;
+
+    transition: all 0.2s ease;
 }
 
 .theme-toggle:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 
 /* =========================================
-   DARK MODE - FULL WEBSITE BODY
+   DARK MODE
    ========================================= */
 
+/* Entire website body */
 body.dark-theme {
-    background-color: #000033 !important;
+    background-color: #000022 !important;
     color: #ffffff !important;
 }
 
 
 /* =========================================
    FULL HEADER
-   Ocean Navy
+   EVERYTHING = #000033
    ========================================= */
 
-body.dark-theme header {
-    background-color: #12395B !important;
-    color: #ffffff !important;
-}
-
+body.dark-theme header,
 body.dark-theme .header,
 body.dark-theme .site-header,
 body.dark-theme .top-header {
-    background-color: #12395B !important;
+    background-color: #000033 !important;
     color: #ffffff !important;
 }
 
 
-/* Brand / website name */
-
-body.dark-theme .brand {
-    color: #ffffff !important;
+/* Header's internal areas */
+body.dark-theme header *,
+body.dark-theme .header *,
+body.dark-theme .site-header *,
+body.dark-theme .top-header * {
+    border-color: rgba(255, 255, 255, 0.25);
 }
 
-body.dark-theme .brand a {
-    color: #ffffff !important;
-}
 
+/* Brand */
+body.dark-theme .brand,
+body.dark-theme .brand a,
 body.dark-theme .brand-name,
 body.dark-theme .brand-title {
     color: #ffffff !important;
@@ -1435,7 +1438,6 @@ body.dark-theme .brand-title {
 
 
 /* Header text */
-
 body.dark-theme header h1,
 body.dark-theme header h2,
 body.dark-theme header h3,
@@ -1450,11 +1452,10 @@ body.dark-theme header span {
 
 /* =========================================
    NAVIGATION
-   Same ocean navy as complete header
    ========================================= */
 
 body.dark-theme nav {
-    background-color: #12395B !important;
+    background-color: #000033 !important;
     color: #ffffff !important;
 }
 
@@ -1467,8 +1468,7 @@ body.dark-theme nav a.current-page {
 }
 
 
-/* Mobile menu area */
-
+/* Mobile menu button */
 body.dark-theme .menu-toggle {
     color: #ffffff !important;
     background: transparent !important;
@@ -1476,8 +1476,7 @@ body.dark-theme .menu-toggle {
 
 
 /* =========================================
-   BODY / MAIN CONTENT
-   Deep Navy
+   MAIN WEBSITE BODY
    ========================================= */
 
 body.dark-theme main,
@@ -1485,48 +1484,34 @@ body.dark-theme .page,
 body.dark-theme .container,
 body.dark-theme .container-fluid,
 body.dark-theme section {
-    background-color: #000033 !important;
+    background-color: #000022 !important;
     color: #ffffff !important;
 }
 
 
 /* =========================================
    CARDS
-   Deep Navy
    ========================================= */
 
-body.dark-theme .card {
-    background-color: #000033 !important;
-    color: #ffffff !important;
-}
-
+body.dark-theme .card,
 body.dark-theme .card-body {
-    background-color: #000033 !important;
+    background-color: #000022 !important;
     color: #ffffff !important;
 }
 
 
 /* =========================================
-   PUBLICATION CARDS
+   PUBLICATIONS
    ========================================= */
 
 body.dark-theme .publication-card {
-    background-color: #000033 !important;
+    background-color: #000022 !important;
     color: #ffffff !important;
 }
 
-body.dark-theme .publication-content {
-    color: #ffffff !important;
-}
-
-body.dark-theme .publication-title {
-    color: #ffffff !important;
-}
-
-body.dark-theme .publication-authors {
-    color: #ffffff !important;
-}
-
+body.dark-theme .publication-content,
+body.dark-theme .publication-title,
+body.dark-theme .publication-authors,
 body.dark-theme .publication-venue {
     color: #ffffff !important;
 }
@@ -1569,41 +1554,47 @@ body.dark-theme span {
    ========================================= */
 
 body.dark-theme a {
-    color: #B9D7FF;
+    color: #b9d7ff;
 }
 
 
 /* =========================================
-   FOOTER
-   Full ocean navy
+   FULL FOOTER
+   EVERYTHING = #000033
    ========================================= */
 
-body.dark-theme footer {
-    background-color: #12395B !important;
+body.dark-theme footer,
+body.dark-theme .footer,
+body.dark-theme .site-footer {
+    background-color: #000033 !important;
     color: #ffffff !important;
 }
 
-body.dark-theme footer h1,
-body.dark-theme footer h2,
-body.dark-theme footer h3,
-body.dark-theme footer h4,
-body.dark-theme footer h5,
-body.dark-theme footer h6,
-body.dark-theme footer p,
-body.dark-theme footer span,
-body.dark-theme footer a {
+
+/* Footer internal content */
+body.dark-theme footer *,
+body.dark-theme .footer *,
+body.dark-theme .site-footer * {
     color: #ffffff !important;
 }
 
 
 /* =========================================
-   THEME TOGGLE - DARK MODE
+   THEME ICON
    ========================================= */
 
-body.dark-theme .theme-toggle {
-    background: #ffffff;
+/* Normal/light mode: WHITE icon */
+.theme-toggle {
+    color: #ffffff;
     border-color: #ffffff;
-    color: #000033;
+}
+
+
+/* Dark mode: BLACK icon */
+body.dark-theme .theme-toggle {
+    color: #000000 !important;
+    border-color: #000000 !important;
+    background: transparent !important;
 }
 
 
@@ -1616,8 +1607,10 @@ body.dark-theme .theme-toggle {
     .theme-toggle {
         width: 30px;
         height: 30px;
-        font-size: 16px;
-        margin-right: 6px;
+
+        font-size: 17px;
+
+        margin: 0 6px 0 0;
     }
 
 }
