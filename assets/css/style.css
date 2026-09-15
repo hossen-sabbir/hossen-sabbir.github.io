@@ -732,14 +732,34 @@ footer {
 
 
 
-.navbar a.current-page {
-    font-weight: 700;
+/* =========================================
+   CURRENT PAGE
+   ========================================= */
+
+nav a.current-page {
+    font-weight: 700 !important;
     text-decoration: none !important;
-    display: inline-block;
-    padding-bottom: 2px;
-    line-height: 1;
-    border-bottom: 2px solid currentColor;
+    position: relative !important;
+    display: inline-block !important;
 }
-.navbar a.current-page::after {
-    content: none !important;
+
+/* Remove any old underline */
+nav a.current-page::after {
+    content: "" !important;
+    position: absolute !important;
+
+    left: 0 !important;
+    right: 0 !important;
+
+    bottom: -2px !important;
+
+    height: 2px !important;
+    width: 100% !important;
+
+    background-color: currentColor !important;
+
+    opacity: 1 !important;
+    transform: none !important;
+
+    transition: none !important;
 }
