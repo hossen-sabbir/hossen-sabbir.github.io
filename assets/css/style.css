@@ -201,10 +201,13 @@ section h2,
    RESEARCH
    ========================= */
 
+
+
 .research-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: #293754;
+    background: #1b253a; /* Darker shade of the original blue-gray */
+    color: #ffffff;      /* Makes the text white */
     padding: 25px;
     gap: 28px;
 }
@@ -212,13 +215,14 @@ section h2,
 .research-grid h3 {
     font-size: 14px;
     margin: 0 0 8px;
+    color: #ffffff;      /* Ensures heading is pure white */
 }
 
 .research-grid p {
     margin: 0;
     font-size: 13px;
+    color: #e2e8f0;      /* Slightly softer white for better readability (or use #ffffff) */
 }
-
 
 /* =========================
    NEWS
