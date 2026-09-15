@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (savedTheme === "dark") {
         document.body.classList.add("dark-theme");
-        themeToggle.textContent = "☀️";
+        themeToggle.textContent = "☾";
     } else {
-        themeToggle.textContent = "🌙";
+        themeToggle.textContent = "☾";
     }
 
     // Toggle theme
@@ -32,11 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.toggle("dark-theme");
 
         if (document.body.classList.contains("dark-theme")) {
-            themeToggle.textContent = "☀️";
+
+            themeToggle.textContent = "☾";
             localStorage.setItem("theme", "dark");
+
         } else {
-            themeToggle.textContent = "🌙";
+
+            themeToggle.textContent = "☾";
             localStorage.setItem("theme", "light");
+
         }
 
     });
