@@ -1300,14 +1300,157 @@ publisher = {IEEE}
     </div>
 </div>
 
-<div class="publication-separator"></div>
+
 
 
 <h1 class="section-title" style="font-size: 1.4rem; margin-bottom: 5px;">
     <i class="fas fa-file-lines"></i> Submitted Manuscripts</h2>
 
 
+<!-- Ongoing Research 3 -->
+<div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
+    <div class="card-body">
 
+        <div class="publication-inner">
+
+            <!-- Image -->
+            <div class="publication-image">
+                <img
+                    src="/assets/BanglaScoring.png"
+                    alt="Automated Scoring of Bangla Student Responses">
+            </div>
+
+            <!-- Content -->
+            <div class="publication-content">
+
+                <!-- Title -->
+                <div class="publication-title">
+                    Automated Scoring of Bangla Student Responses: An Efficient and Explainable Deep Learning Approach
+                </div>
+
+                <!-- Authors -->
+                <div class="publication-authors">
+                    Md. Tanvir Ahmed Shaikat, Pabon Shaha, S M Rifatur Rana, <strong>Md. Sabbir Hossen</strong>, Mostofa Kamal Nasir, Omar Sharif, and Asib Hasan
+                </div>
+
+                <!-- Status -->
+                <div class="publication-venue">
+                    <span style="color: red;"><strong>[Under Review]</strong></span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="pub-actions">
+
+                    <button
+                        class="pub-btn pub-btn-abstract"
+                        onclick="toggleSection('pub14-abstract')">
+                        <i class="bi bi-card-text me-1"></i>
+                        Abstract
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-bibtex"
+                        onclick="toggleSection('pub14-bibtex')">
+                        <i class="bi bi-braces me-1"></i>
+                        BibTeX
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-pdf"
+                        onclick="toggleSection('pub14-pdf')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i>
+                        PDF
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-paper"
+                        onclick="toggleSection('pub14-paper')">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        Paper Link →
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-code"
+                        onclick="toggleSection('pub14-code')">
+                        <i class="bi bi-code-slash me-1"></i>
+                        Code
+                    </button>
+
+                </div>
+
+                <!-- Abstract -->
+                <div
+                    id="pub14-abstract"
+                    class="toggle-section toggle-abstract">
+
+                    <strong>Abstract:</strong>
+
+                    <p>
+                        The automatic grading of student answers is one of the most important tasks in educational technology, designed to deliver fair, scalable, and accurate assessment comparable to that of human scorers. Although transformer-based methods such as BERT have contributed significantly to this area in high-resource languages, limited research has been conducted for Bangla, a low-resource language with more than 230 million speakers globally. This study proposes a hybrid model based on Bangla-BERT embeddings coupled with semantic similarity features and various predictive models, including ensemble machine learning algorithms such as Adaptive Boosting (ADB), Extreme Gradient Boosting (XGB), Random Forest (RF), Support Vector Regression (SVM), and Ridge Regression (RR), as well as deep neural networks such as Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM). The dataset comprises 2,847 Bangla student responses across seven academic learning domains, scored from 0–10 by subject experts. Root Mean Square Error (RMSE), Mean Absolute Error (MAE), R-squared (R²), Pearson correlation coefficient, and Quadratic Weighted Kappa (QWK) were used for evaluation under 10-fold cross-validation. Results reveal that XGB consistently outperforms both linear and deep learning models, achieving RMSE = 1.2574, MAE ≈ 0.8502, R² ≈ 0.8606, Pearson ≈ 0.9277, and QWK ≈ 0.9211. Moreover, LIME-based feature attribution reveals that semantic similarity features, including cosine similarity and BERTScore, are the most important predictors, further highlighting the interpretability of the system. This work introduces a complete automatic scoring system for Bangla and contributes to the development of NLP for low-resource languages while providing a transparent and reliable basis for educational assessment systems.
+                    </p>
+
+                </div>
+
+                <!-- BibTeX -->
+                <div
+                    id="pub14-bibtex"
+                    class="toggle-section toggle-bibtex">
+
+                    <strong>BibTeX:</strong>
+
+                    <pre>@article{Shaikat2026,
+  title={Automated Scoring of Bangla Student Responses: An Efficient and Explainable Deep Learning Approach},
+  author={Shaikat, Md. Tanvir Ahmed and Shaha, Pabon and Rana, S M Rifatur and Hossen, Md. Sabbir and others},
+  year={2026}
+}</pre>
+
+                </div>
+
+                <!-- PDF -->
+                <div
+                    id="pub14-pdf"
+                    class="toggle-section toggle-pdf">
+
+                    <a href="#" target="_blank">
+                        📄 Download PDF
+                    </a>
+
+                </div>
+
+                <!-- Paper Link -->
+                <div
+                    id="pub14-paper"
+                    class="toggle-section toggle-paper">
+
+                    <a href="#" target="_blank">
+                        🔗 View Paper
+                    </a>
+
+                </div>
+
+                <!-- Code -->
+                <div
+                    id="pub14-code"
+                    class="toggle-section toggle-code">
+
+                    <span>
+                        💻 Source code will be made available upon request.
+                        Please
+                        <a href="/contact/" target="_blank">
+                            Contact
+                        </a>.
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-separator"></div>
+
+  
     <!-- Ongoing Research 1 -->
     <div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
         <div class="card-body">
@@ -1336,7 +1479,7 @@ publisher = {IEEE}
 
                     <!-- Status -->
                     <div class="publication-venue">
-                        <span style="color: red;"><strong>[Manuscript Under Reviewe in a Q1 Journal]</strong></span>
+                        <span style="color: red;"><strong>[Under Review in a Q1 Journal]</strong></span>
                     </div>
 
                     <!-- Buttons -->
@@ -1449,7 +1592,7 @@ publisher = {IEEE}
         </div>
     </div>
 
-  
+  <div class="publication-separator"></div>
   
 <!-- Publication / Manuscript 10 -->
 <div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
@@ -1598,6 +1741,149 @@ publisher = {IEEE}
 <div class="publication-separator"></div>
 
 
+ <!-- Ongoing Research 2 -->
+<div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
+    <div class="card-body">
+
+        <div class="publication-inner">
+
+            <!-- Image -->
+            <div class="publication-image">
+                <img
+                    src="/assets/Alzheimer.png"
+                    alt="Alzheimer's Disease Detection">
+            </div>
+
+            <!-- Content -->
+            <div class="publication-content">
+
+                <!-- Title -->
+                <div class="publication-title">
+                    Optimized Hybrid Approach for Early Detection of Alzheimer’s Disease Using Machine Learning and Deep Learning Technique
+                </div>
+
+                <!-- Authors -->
+                <div class="publication-authors">
+                    Eshat Ahmad Shuvo, Wahidur Rahman, Pabon Shaha, <strong>Md. Sabbir Hossen</strong>, Anichur Rahman, Mariam Faruque Sharif, Fahmid Al Farid, Hezerul Abdul Karim, and Abu Saleh Musa Miah
+                </div>
+
+                <!-- Status -->
+                <div class="publication-venue">
+                    <span style="color: red;"><strong>[Under Review]</strong></span>
+                </div>
+
+                <!-- Buttons -->
+                <div class="pub-actions">
+
+                    <button
+                        class="pub-btn pub-btn-abstract"
+                        onclick="toggleSection('pub13-abstract')">
+                        <i class="bi bi-card-text me-1"></i>
+                        Abstract
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-bibtex"
+                        onclick="toggleSection('pub13-bibtex')">
+                        <i class="bi bi-braces me-1"></i>
+                        BibTeX
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-pdf"
+                        onclick="toggleSection('pub13-pdf')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i>
+                        PDF
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-paper"
+                        onclick="toggleSection('pub13-paper')">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        Paper Link →
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-code"
+                        onclick="toggleSection('pub13-code')">
+                        <i class="bi bi-code-slash me-1"></i>
+                        Code
+                    </button>
+
+                </div>
+
+                <!-- Abstract -->
+                <div
+                    id="pub13-abstract"
+                    class="toggle-section toggle-abstract">
+
+                    <strong>Abstract:</strong>
+
+                    <p>
+                        Alzheimer’s disease (AD) is an emerging and fatal neurological disorder characterized by slowly progressive cognitive deterioration and memory loss. Hence, early identification of the disease and timely intervention are key to managing AD and ensuring minimal deterioration of the condition. In the past, diagnosis was usually performed clinically by neurologists with the help of physical examination, including neuroimaging, which is efficient but time-consuming and tiresome. In recent years, the use of AI-enabled computer vision for image processing and analysis has received much interest. Prior studies using AI and machine learning approaches have demonstrated improved accuracy, but they often require significant computational resources and massive datasets. This paper presents a cascaded network topology employing both deep learning and conventional machine learning methods, optimized using Linear Discriminant Analysis (LDA) for AD diagnosis from neuroimaging data. The proposed approach achieved an accuracy of 98.32% using a frozen 20.014 M-parameter backbone with an inference time of 309 ms and without end-to-end fine-tuning, making it suitable for settings with limited data and modest hardware. Five well-known pre-trained CNN architectures were evaluated as feature extractors, and LDA was applied to project the extracted features onto a compact discriminative subspace before classification using seven conventional machine learning models. Among the evaluated approaches, the DenseNet201-LDA-KNN cascaded network achieved the best performance for Alzheimer’s disease detection.
+                    </p>
+
+                </div>
+
+                <!-- BibTeX -->
+                <div
+                    id="pub13-bibtex"
+                    class="toggle-section toggle-bibtex">
+
+                    <strong>BibTeX:</strong>
+
+                    <pre>@article{Shuvo2026,
+  title={Optimized Hybrid Approach for Early Detection of Alzheimer’s Disease Using Machine Learning and Deep Learning Technique},
+  author={Shuvo, Eshat Ahmad and Rahman, Wahidur and Shaha, Pabon and Hossen, Md. Sabbir and others},
+  year={2026}
+}</pre>
+
+                </div>
+
+                <!-- PDF -->
+                <div
+                    id="pub13-pdf"
+                    class="toggle-section toggle-pdf">
+
+                    <a href="#" target="_blank">
+                        📄 Download PDF
+                    </a>
+
+                </div>
+
+                <!-- Paper Link -->
+                <div
+                    id="pub13-paper"
+                    class="toggle-section toggle-paper">
+
+                    <a href="#" target="_blank">
+                        🔗 View Paper
+                    </a>
+
+                </div>
+
+                <!-- Code -->
+                <div
+                    id="pub13-code"
+                    class="toggle-section toggle-code">
+
+                    <span>
+                        💻 Source code will be made available upon request.
+                        Please
+                        <a href="/contact/" target="_blank">
+                            Contact
+                        </a>.
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-separator"></div> 
+
 <!-- Publication / Manuscript 11 -->
 <div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
     <div class="card-body">
@@ -1745,7 +2031,7 @@ publisher = {IEEE}
 
 <!-- Ongoing Research -->
 <h1 class="section-title" style="font-size: 1.4rem; margin-bottom: 5px;">
-    <i class="fas fa-microscope"></i>
+    <i class="fas fa-manifying-glass"></i>
             Ongoing Research
         </h2>
     </div>
