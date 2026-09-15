@@ -481,6 +481,38 @@ function toggleNews() {
 
     button.textContent = isExpanded ? 'Show More' : 'Show Less';
 }
+
+
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        body.classList.add("dark-theme");
+        themeToggle.textContent = "☀️";
+    }
+
+    themeToggle.addEventListener("click", function () {
+
+        body.classList.toggle("dark-theme");
+
+        if (body.classList.contains("dark-theme")) {
+            themeToggle.textContent = "☀️";
+            localStorage.setItem("theme", "dark");
+        } else {
+            themeToggle.textContent = "🌙";
+            localStorage.setItem("theme", "light");
+        }
+
+    });
+
+});
+</script>
 </script>
 <script src="/assets/js/main.js"></script>
 </body>
