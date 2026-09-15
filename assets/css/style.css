@@ -740,3 +740,6 @@ footer {
     line-height: 1;
     border-bottom: 2px solid currentColor;
 }
+.navbar a.current-page::after {
+    content: none !important;
+}
