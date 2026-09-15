@@ -709,7 +709,11 @@ footer {
 
 
 .hidden-news {
-    display: none;
+    display: none !important;
+}
+
+.hidden-news.show {
+    display: grid !important;
 }
 
 .show-more-btn {
