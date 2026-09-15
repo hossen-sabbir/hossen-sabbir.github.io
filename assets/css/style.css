@@ -842,8 +842,8 @@ nav a.current-page::after {
 
     /* Wider publication page on mobile */
     .publications-page {
-        width: 98%;
-        max-width: 98%;
+        width: 97%;
+        max-width: 97%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 0;
@@ -856,8 +856,8 @@ nav a.current-page::after {
     }
 
     .publications-page .publication-image img {
-    width: 220px;
-    max-width: 220px;
+    width: 260px;
+    max-width: 260px;
     height: auto;
         object-fit: cover;
         border-radius: 0 !important;
@@ -865,7 +865,7 @@ nav a.current-page::after {
 
     /* Smaller publication text */
     .publications-page .publication-title {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.35;
     }
 
