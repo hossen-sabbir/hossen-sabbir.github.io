@@ -174,16 +174,41 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const email = document.getElementById("email").value.trim();
 
     // Additional email validation
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const emailPattern =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+$/;
 
-    if (!emailPattern.test(email)) {
-        messageBox.style.display = "block";
-        messageBox.style.background = "#f8d7da";
-        messageBox.style.color = "#842029";
-        messageBox.textContent = "Please enter a valid email address.";
-        document.getElementById("email").focus();
-        return;
-    }
+if (!emailPattern.test(email)) {
+    messageBox.style.display = "block";
+    messageBox.style.background = "#f8d7da";
+    messageBox.style.color = "#842029";
+    messageBox.textContent = "Please enter a valid email address.";
+    document.getElementById("email").focus();
+    return;
+}
+
+const domain = email.split("@")[1].toLowerCase();
+
+// Common invalid/fake domains
+const blockedDomains = [
+    "gami.com",
+    "gmai.com",
+    "gmial.com",
+    "gmail.co",
+    "gmail.cm",
+    "yahooo.com",
+    "yaho.com",
+    "outlok.com",
+    "outlook.co"
+];
+
+if (blockedDomains.includes(domain)) {
+    messageBox.style.display = "block";
+    messageBox.style.background = "#f8d7da";
+    messageBox.style.color = "#842029";
+    messageBox.textContent = "Please enter a valid email address.";
+    document.getElementById("email").focus();
+    return;
+}
 
     // Disable button while submitting
     button.disabled = true;
