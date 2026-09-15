@@ -729,3 +729,14 @@ footer {
 .show-more-btn:hover {
     text-decoration: underline;
 }
+
+
+
+.navbar a.current-page {
+    font-weight: 700;
+    text-decoration: none !important;
+    display: inline-block;
+    padding-bottom: 2px;
+    line-height: 1;
+    border-bottom: 2px solid currentColor;
+}
