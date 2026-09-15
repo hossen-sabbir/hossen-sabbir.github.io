@@ -856,9 +856,9 @@ nav a.current-page::after {
     }
 
     .publications-page .publication-image img {
-        width: 200px;
-        height: 200px;
-        max-width: 200px;
+    width: 220px;
+    max-width: 220px;
+    height: auto;
         object-fit: cover;
         border-radius: 0 !important;
     }
