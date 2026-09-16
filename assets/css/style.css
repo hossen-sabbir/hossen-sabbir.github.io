@@ -201,11 +201,10 @@ section h2,
    RESEARCH
    ========================= */
 
-
 .research-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: rgba(23, 32, 46, 0.70);
+    background: rgba(23, 32, 46, 0.82);
     color: #ffffff;
     padding: 25px;
     gap: 28px;
