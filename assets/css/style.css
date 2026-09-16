@@ -205,7 +205,7 @@ section h2,
 .research-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background: rgba(23, 32, 46, 0.90);
+    background: rgba(23, 32, 46, 0.70);
     color: #ffffff;
     padding: 25px;
     gap: 28px;
