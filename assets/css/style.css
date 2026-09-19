@@ -1499,16 +1499,7 @@ footer,
 
     flex: 0 0 34px;
 
-    /*
-       24px on the left separates the button
-       from the final navigation item.
-       
-       22px on the right separates it from
-       the Home/navigation area depending on
-       your HTML order.
-    */
     margin: 0 22px;
-
     padding: 0;
 
     border: 1px solid #444;
@@ -1523,10 +1514,6 @@ footer,
     cursor: pointer;
     box-sizing: border-box;
 
-    /*
-       No transform transition.
-       Button will NOT move on hover.
-    */
     transition:
         background-color 0.2s ease,
         color 0.2s ease,
@@ -1724,7 +1711,7 @@ footer,
 
 
 /* =========================================
-   MOBILE MENU BUTTON
+   MOBILE MENU BUTTON - DARK THEME
    ========================================= */
 
 [data-theme="dark"] .menu-toggle {
@@ -1788,53 +1775,16 @@ footer,
 }
 
 
-/* =========================================
-   MOBILE
-   ========================================= */
+/* ==========================================================
+   MOBILE HEADER / NAVIGATION
+   ========================================================== */
 
 @media (max-width: 768px) {
 
-    /*
-       Keep header controls aligned horizontally.
-    */
+    /* =====================================
+       RIGHT SIDE HEADER CONTROLS
+       ===================================== */
 
-    .header-right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-left: auto;
-    }
-
-
-    /*
-       Smaller theme button with enough separation
-       from hamburger/menu controls.
-    */
-
-    .header-right .theme-toggle {
-        width: 32px;
-        height: 32px;
-
-        flex: 0 0 32px;
-
-        margin: 0 12px 0 0;
-
-        font-size: 14px;
-    }
-
-
-    .header-right .menu-toggle {
-        margin: 0;
-    }
-
-}
-/* =========================================
-   MOBILE HEADER BUTTON FIX
-   ========================================= */
-
-@media (max-width: 768px) {
-
-    /* Right-side controls */
     .header-right {
         display: flex;
         align-items: center;
@@ -1848,6 +1798,20 @@ footer,
 
 
     /* =====================================
+       MOBILE NAVIGATION
+       Hidden until hamburger is clicked
+       ===================================== */
+
+    .header-right nav {
+        display: none;
+    }
+
+    .header-right nav.open {
+        display: flex;
+    }
+
+
+    /* =====================================
        DARK MODE BUTTON
        ===================================== */
 
@@ -1856,6 +1820,7 @@ footer,
 
         width: 32px;
         height: 32px;
+
         min-width: 32px;
         max-width: 32px;
 
@@ -1870,6 +1835,8 @@ footer,
 
         z-index: 3;
 
+        font-size: 14px;
+
         cursor: pointer;
         pointer-events: auto;
 
@@ -1878,10 +1845,14 @@ footer,
 
 
     /* Theme icon */
+
     .header-right .theme-toggle i {
         pointer-events: none;
+
         margin: 0;
         padding: 0;
+
+        line-height: 1;
     }
 
 
@@ -1891,6 +1862,10 @@ footer,
 
     .header-right .menu-toggle {
         position: relative !important;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
 
         width: auto;
         height: 32px;
