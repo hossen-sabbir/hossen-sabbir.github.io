@@ -993,6 +993,9 @@ footer {
 .timeline-item .date {
     white-space: nowrap;
 }
+/* =========================================
+   PROFESSIONAL SKILLS
+   ========================================= */
 
 .skills-container {
     margin-top: 10px;
@@ -1007,7 +1010,7 @@ footer {
     font-weight: 600;
     margin-bottom: 8px;
 
-    /* Keep heading black */
+    /* Black in normal/light mode */
     color: #000000 !important;
 }
 
@@ -1020,26 +1023,36 @@ footer {
 .skill-badge {
     display: inline-block;
     padding: 5px 11px;
+
     border: 1px solid #dee2e6;
     border-radius: 20px;
+
     background: #f8f9fa;
+
     font-size: 0.85rem;
     line-height: 1.3;
 
-    /* Keep badge text black */
+    /* Badge text always black */
     color: #000000 !important;
 }
 
-/* Keep Professional Skills content black in dark mode */
 
+/* =========================================
+   PROFESSIONAL SKILLS - DARK MODE
+   ========================================= */
+
+/* Skill category titles become light */
 [data-theme="dark"] .skills-container .skill-group h3 {
-    color: #000000 !important;
+    color: var(--heading-color) !important;
 }
 
+
+/* Badges remain light with black text */
 [data-theme="dark"] .skills-container .skill-badge {
     color: #000000 !important;
+    background: #f8f9fa !important;
+    border-color: #dee2e6 !important;
 }
-
 .section-title {
     border-bottom: 1px solid #dee2e6;
     padding-bottom: 5px;
