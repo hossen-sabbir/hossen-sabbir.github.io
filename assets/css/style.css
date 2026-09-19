@@ -1828,3 +1828,59 @@ footer,
     }
 
 }
+
+/* =========================================
+   MOBILE HEADER BUTTON FIX
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Right-side header controls */
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-left: auto;
+    }
+
+    /* Dark-mode button */
+    .header-right .theme-toggle {
+        position: static !important;
+
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+
+        margin: 0 !important;
+        padding: 0;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        flex: 0 0 32px;
+
+        z-index: 2;
+
+        cursor: pointer;
+    }
+
+    /* Hamburger button */
+    .header-right .menu-toggle {
+        position: static !important;
+
+        margin: 0 !important;
+        padding: 0;
+
+        z-index: 2;
+
+        cursor: pointer;
+    }
+
+    /* Keep the two click areas completely separate */
+    .header-right .theme-toggle,
+    .header-right .menu-toggle {
+        pointer-events: auto;
+    }
+}
