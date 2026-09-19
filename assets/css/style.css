@@ -1770,3 +1770,85 @@ footer,
     }
 
 }
+
+/* =========================================
+   HEADER RIGHT SIDE
+   Theme + Navigation
+   ========================================= */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+
+/* Navigation alignment */
+
+.nav-right nav {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Theme button */
+
+.nav-right .theme-toggle {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+
+    flex: 0 0 32px;
+
+    border-radius: 50%;
+
+    line-height: 1;
+    vertical-align: middle;
+}
+
+
+/* Keep icon perfectly centered */
+
+.nav-right .theme-toggle i {
+    display: block;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .nav-right {
+        margin-left: auto;
+        gap: 8px;
+    }
+
+    /* Smaller theme button on mobile */
+    .nav-right .theme-toggle {
+        width: 30px;
+        height: 30px;
+        flex-basis: 30px;
+        font-size: 15px;
+    }
+
+    /*
+       On mobile the hamburger remains beside
+       the theme button.
+    */
+    .nav-right .menu-toggle {
+        margin: 0;
+    }
+
+}
