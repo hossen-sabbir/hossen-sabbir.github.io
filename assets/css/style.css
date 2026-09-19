@@ -1891,10 +1891,14 @@ footer,
 
 
 
-[data-theme="dark"] .skills-container .skill-group h3 {
+/* =========================================
+   SKILLS - FORCE ORIGINAL BLACK TEXT
+   ========================================= */
+
+html[data-theme="dark"] body .skills-container h3 {
     color: #000000 !important;
 }
 
-[data-theme="dark"] .skills-container .skill-badge {
+html[data-theme="dark"] body .skills-container .skill-badge {
     color: #000000 !important;
 }
