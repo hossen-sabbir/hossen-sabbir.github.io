@@ -1356,51 +1356,73 @@ nav a.current-page::after {
 
 
 
+/* ==========================================================
+   DARK THEME
+   Uses: <html data-theme="dark">
+   ========================================================== */
 
 
 /* =========================================
-   THEME TOGGLE BUTTON
+   DARK THEME VARIABLES
    ========================================= */
 
+[data-theme="dark"] {
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #273449;
+
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --heading-color: #f1f5f9;
+
+    --border-color: #334155;
+    --link-color: #93b4f8;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   SMOOTH THEME TRANSITION
+   ========================================= */
+
+body,
+header,
+nav,
+main,
+section,
+footer,
+.card,
+.card-body,
+.publication-card,
+.publication-content,
 .theme-toggle {
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    margin: 0 8px 0 0;
-
-    border: 1.5px solid #222;
-    border-radius: 50%;
-
-    background: transparent;
-    color: #fff;
-
-    font-size: 18px;
-    line-height: 1;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    cursor: pointer;
-    vertical-align: middle;
-    flex-shrink: 0;
-
-    transition: all 0.2s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.05);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 
 /* =========================================
-   DARK MODE
-   ONE COLOR THROUGHOUT THE WEBSITE
+   FULL PAGE
    ========================================= */
 
-body.dark-theme {
-    background-color: #252525 !important;
-    color: #ffffff !important;
+[data-theme="dark"] body {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+
+/* Main containers */
+
+[data-theme="dark"] main,
+[data-theme="dark"] .page,
+[data-theme="dark"] .container,
+[data-theme="dark"] .container-fluid {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 
@@ -1408,30 +1430,22 @@ body.dark-theme {
    HEADER
    ========================================= */
 
-body.dark-theme header,
-body.dark-theme .header,
-body.dark-theme .site-header,
-body.dark-theme .top-header {
-    background-color: #252525 !important;
-    color: #ffffff !important;
+[data-theme="dark"] header,
+[data-theme="dark"] .header,
+[data-theme="dark"] .site-header,
+[data-theme="dark"] .top-header {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
 }
 
 
-/* Header content */
-body.dark-theme header *,
-body.dark-theme .header *,
-body.dark-theme .site-header *,
-body.dark-theme .top-header * {
-    background-color: transparent;
-}
+/* Brand */
 
-
-/* Brand / title */
-body.dark-theme .brand,
-body.dark-theme .brand a,
-body.dark-theme .brand-name,
-body.dark-theme .brand-title {
-    color: #ffffff !important;
+[data-theme="dark"] .brand,
+[data-theme="dark"] .brand a,
+[data-theme="dark"] .brand-name,
+[data-theme="dark"] .brand-title {
+    color: var(--heading-color) !important;
 }
 
 
@@ -1439,107 +1453,53 @@ body.dark-theme .brand-title {
    NAVIGATION
    ========================================= */
 
-body.dark-theme nav {
-    background-color: #252525 !important;
-    color: #ffffff !important;
+[data-theme="dark"] nav,
+[data-theme="dark"] .navbar {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
 }
 
-body.dark-theme nav a {
-    color: #ffffff !important;
+[data-theme="dark"] nav a,
+[data-theme="dark"] .navbar a {
+    color: var(--text-primary) !important;
 }
 
-body.dark-theme nav a.current-page {
-    color: #ffffff !important;
+[data-theme="dark"] nav a:hover,
+[data-theme="dark"] .navbar a:hover {
+    color: var(--link-color) !important;
 }
 
-body.dark-theme .menu-toggle {
-    color: #ffffff !important;
-    background: transparent !important;
-}
-
-
-/* =========================================
-   BODY
-   ========================================= */
-
-body.dark-theme main,
-body.dark-theme .page,
-body.dark-theme .container,
-body.dark-theme .container-fluid,
-body.dark-theme section {
-    background-color: #252525 !important;
+[data-theme="dark"] nav a.current-page {
     color: #ffffff !important;
 }
 
 
 /* =========================================
-   CARDS
+   HEADINGS
    ========================================= */
 
-body.dark-theme .card,
-body.dark-theme .card-body {
-    background-color: #252525 !important;
-    color: #ffffff !important;
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+    color: var(--heading-color) !important;
 }
 
 
 /* =========================================
-   PUBLICATIONS
+   NORMAL TEXT
    ========================================= */
 
-body.dark-theme .publication-card,
-body.dark-theme .publication-content {
-    background-color: #252525 !important;
-    color: #ffffff !important;
+[data-theme="dark"] p,
+[data-theme="dark"] li {
+    color: var(--text-primary);
 }
 
-body.dark-theme .publication-title,
-body.dark-theme .publication-authors,
-body.dark-theme .publication-venue {
-    color: #ffffff !important;
-}
-
-
-/* =========================================
-   RESEARCH GRID
-   ALSO SAME DARK GRAY
-   ========================================= */
-
-
-
-/* =========================================
-   ALL TEXT
-   ========================================= */
-
-body.dark-theme h1,
-body.dark-theme h2,
-body.dark-theme h3,
-body.dark-theme h4,
-body.dark-theme h5,
-body.dark-theme h6,
-body.dark-theme p,
-body.dark-theme li,
-body.dark-theme span {
-    color: #ffffff !important;
-}
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
-
-body.dark-theme footer,
-body.dark-theme .footer,
-body.dark-theme .site-footer {
-    background-color: #252525 !important;
-    color: #ffffff !important;
-}
-
-body.dark-theme footer *,
-body.dark-theme .footer *,
-body.dark-theme .site-footer * {
-    color: #ffffff !important;
-    background-color: transparent;
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .text-secondary {
+    color: var(--text-secondary) !important;
 }
 
 
@@ -1547,27 +1507,252 @@ body.dark-theme .site-footer * {
    LINKS
    ========================================= */
 
-body.dark-theme a {
-    color: #ffffff;
+[data-theme="dark"] a {
+    color: var(--link-color);
 }
 
 
 /* =========================================
-   DARK MODE ICON
+   CARDS
    ========================================= */
 
-/* Normal mode */
-.theme-toggle {
-    color: #ffffff;
-    border-color: #ffffff;
-    background: transparent;
+[data-theme="dark"] .card {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
 }
 
-/* Dark mode */
-body.dark-theme .theme-toggle {
-    color: #000000 !important;
-    border-color: #000000 !important;
+[data-theme="dark"] .card-body {
+    background-color: transparent !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .card h1,
+[data-theme="dark"] .card h2,
+[data-theme="dark"] .card h3,
+[data-theme="dark"] .card h4,
+[data-theme="dark"] .card h5,
+[data-theme="dark"] .card h6 {
+    color: var(--heading-color) !important;
+}
+
+[data-theme="dark"] .card p,
+[data-theme="dark"] .card li {
+    color: var(--text-primary);
+}
+
+
+/* =========================================
+   BOOTSTRAP LIGHT BACKGROUNDS
+   ========================================= */
+
+[data-theme="dark"] .bg-light {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+
+/* =========================================
+   PUBLICATIONS
+   ========================================= */
+
+[data-theme="dark"] .publication-card {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .publication-content {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .publication-title {
+    color: var(--heading-color) !important;
+}
+
+[data-theme="dark"] .publication-authors {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] .publication-venue {
+    color: var(--text-secondary) !important;
+}
+
+
+/* Abstract / BibTeX / PDF expandable areas */
+
+[data-theme="dark"] .toggle-section {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .toggle-section p {
+    color: var(--text-primary) !important;
+}
+
+
+/* =========================================
+   IMPORTANT:
+   KEEP YOUR RESEARCH GRID UNCHANGED
+   ========================================= */
+
+/*
+   No dark-theme background override is applied
+   to .research-grid.
+
+   Therefore your existing:
+
+   .research-grid {
+       background: rgba(23, 32, 46, ...);
+   }
+
+   remains unchanged.
+*/
+
+
+/* =========================================
+   SECTION TITLES
+   ========================================= */
+
+[data-theme="dark"] .section-title {
+    color: var(--heading-color) !important;
+    border-color: var(--border-color);
+}
+
+
+/* =========================================
+   INTRO TEXT
+   ========================================= */
+
+[data-theme="dark"] .intro {
+    color: var(--text-primary) !important;
+}
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+[data-theme="dark"] .pub-btn {
+    border-color: var(--border-color);
+}
+
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+
+.theme-toggle {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+    margin: 0 10px 0 0;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    background: transparent;
+    color: #222;
+
+    font-size: 16px;
+    line-height: 1;
+
+    cursor: pointer;
+    vertical-align: middle;
+    flex-shrink: 0;
+
+    transition:
+        background-color 0.3s,
+        color 0.3s,
+        border-color 0.3s,
+        transform 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.07);
+}
+
+
+/* Theme button in dark mode */
+
+[data-theme="dark"] .theme-toggle {
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    color: #ffffff !important;
+    border-color: var(--text-primary) !important;
+}
+
+
+/* =========================================
+   MOBILE MENU
+   ========================================= */
+
+[data-theme="dark"] .menu-toggle {
+    color: var(--text-primary) !important;
     background: transparent !important;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+[data-theme="dark"] footer,
+[data-theme="dark"] .footer,
+[data-theme="dark"] .site-footer {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] footer p,
+[data-theme="dark"] footer span,
+[data-theme="dark"] footer li {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] footer a {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] footer a:hover {
+    color: var(--link-color) !important;
+}
+
+
+/* =========================================
+   FORMS - CONTACT PAGE
+   ========================================= */
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+    color: var(--text-secondary) !important;
+}
+
+
+/* =========================================
+   HORIZONTAL LINES / BORDERS
+   ========================================= */
+
+[data-theme="dark"] hr {
+    border-color: var(--border-color) !important;
 }
 
 
@@ -1580,71 +1765,8 @@ body.dark-theme .theme-toggle {
     .theme-toggle {
         width: 30px;
         height: 30px;
-        font-size: 17px;
-        margin: 0 6px 0 0;
-    }
-
-}
-
-
-/* =========================================
-   THEME BUTTON - NAVIGATION ITEM
-   ========================================= */
-
-nav .theme-toggle {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-
-    width: 32px;
-    height: 32px;
-
-    margin: 0 8px 0 0;
-    padding: 0;
-
-    border: 1.5px solid #222;
-    border-radius: 50%;
-
-    background: transparent;
-    color: #222;
-
-    font-size: 18px;
-    line-height: 1;
-
-    cursor: pointer;
-    vertical-align: middle;
-
-    box-sizing: border-box;
-    flex-shrink: 0;
-}
-
-
-/* Dark mode icon */
-body.dark-theme nav .theme-toggle {
-    color: #000000 !important;
-    border-color: #000000 !important;
-    background: transparent !important;
-}
-
-
-/* Normal mode icon */
-body:not(.dark-theme) nav .theme-toggle {
-    color: #ffffff !important;
-    border-color: #ffffff !important;
-    background: transparent !important;
-}
-
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    nav .theme-toggle {
-        width: 30px;
-        height: 30px;
-
-        margin: 0 6px 0 0;
-
-        font-size: 17px;
+        font-size: 15px;
+        margin-right: 7px;
     }
 
 }
