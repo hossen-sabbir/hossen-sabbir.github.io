@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+    <!-- Load saved theme before CSS/page renders -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sabbir Hossen</title>
@@ -21,12 +34,14 @@
 <header class="site-header">
   <div class="container nav-wrap">
 
+    <!-- Brand -->
     <a class="brand" href="/">
       <img src="/assets/header.PNG" alt="Sabbir Hossen" class="brand-photo">
       <span>Sabbir Hossen</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <!-- Right side -->
+    <div class="header-right">
 <nav>
   <a href="/" style="font-size: 16px;">Home</a>
   <a href="/publications/" style="font-size: 16px;">Publications</a>
@@ -37,6 +52,21 @@
   <a class="current-page" href="/cv/" style="font-size: 16px;">CV</a>
 </nav>
 
+ <button
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        onclick="event.stopPropagation(); toggleTheme();"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+      </button>
+
+      <!-- Mobile Menu -->
+      <button type="button" class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+    </div>
 
   </div>
 </header>
