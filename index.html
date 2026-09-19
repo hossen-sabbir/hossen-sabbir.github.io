@@ -36,6 +36,16 @@
     </a>
 
     <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <button
+    type="button"
+    class="theme-toggle"
+    id="theme-toggle"
+    onclick="toggleTheme()"
+    aria-label="Toggle dark mode"
+    title="Toggle dark mode"
+>
+    <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+</button>
 <nav>
   <a class="current-page" href="/" style="font-size: 16px;">Home</a>
   <a href="/publications/" style="font-size: 16px;">Publications</a>
@@ -47,16 +57,7 @@
   <!--    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button> -->
 
 </nav>
-  <button
-    type="button"
-    class="theme-toggle"
-    id="theme-toggle"
-    onclick="toggleTheme()"
-    aria-label="Toggle dark mode"
-    title="Toggle dark mode"
->
-    <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
-</button>
+
 
   </div>
 </header>
