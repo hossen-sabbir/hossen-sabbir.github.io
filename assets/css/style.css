@@ -1771,71 +1771,123 @@ footer,
 
 }
 
-/* =========================================
-   THEME BUTTON POSITION
-   ========================================= */
+/* ==================================================
+   HEADER NAVIGATION + THEME BUTTON
+   ================================================== */
 
-.nav-wrap {
-    position: relative;
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0;
+    margin-left: auto;
 }
 
-/* Desktop */
-.theme-toggle {
-    position: absolute;
 
-    /* Position directly before navigation */
-    right: 485px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 32px;
-    height: 32px;
-
+/* Desktop navigation */
+.header-right nav {
     display: flex;
+    align-items: center;
+}
+
+
+/* ==================================================
+   THEME BUTTON
+   ================================================== */
+
+.header-right .theme-toggle {
+    width: 36px;
+    height: 36px;
+
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
-    padding: 0;
-    margin: 0;
+    flex: 0 0 36px;
 
+    margin: 0 0 0 18px;
+    padding: 0;
+
+    border: 1px solid #d1d5db;
     border-radius: 50%;
 
-    z-index: 10;
+    background: transparent;
+    color: inherit;
+
+    font-size: 15px;
+    line-height: 1;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 
-/* Keep icon centered */
-.theme-toggle i {
+/* Perfectly center Font Awesome icon */
+.header-right .theme-toggle i {
+    display: block;
     margin: 0;
     padding: 0;
     line-height: 1;
 }
 
 
-/* =========================================
+/* Hover */
+.header-right .theme-toggle:hover {
+    background: rgba(128, 128, 128, 0.12);
+    transform: scale(1.05);
+}
+
+
+/* ==================================================
+   DARK THEME BUTTON
+   ================================================== */
+
+[data-theme="dark"] .header-right .theme-toggle {
+    color: #ffffff;
+    border-color: #64748b;
+    background: transparent;
+}
+
+[data-theme="dark"] .header-right .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* ==================================================
    MOBILE
-   ========================================= */
+   ================================================== */
 
 @media (max-width: 768px) {
 
-    .theme-toggle {
-        position: absolute;
+    .header-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
 
-        /*
-         Theme button immediately to the
-         left of hamburger menu
-        */
-        right: 52px;
-        top: 50%;
-        transform: translateY(-50%);
+    /*
+       Your existing mobile CSS controls whether
+       nav is open/closed. Do not force display:flex here.
+    */
 
-        width: 30px;
-        height: 30px;
+    .header-right .theme-toggle {
+        width: 34px;
+        height: 34px;
+        flex: 0 0 34px;
 
+        margin: 0 10px 0 0;
+
+        font-size: 14px;
+    }
+
+    .header-right .menu-toggle {
         margin: 0;
-        padding: 0;
-
-        font-size: 15px;
     }
 
 }
