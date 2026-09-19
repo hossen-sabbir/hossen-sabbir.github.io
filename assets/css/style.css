@@ -1353,9 +1353,6 @@ nav a.current-page::after {
 
 
 
-
-
-
 /* ==========================================================
    DARK THEME
    Uses: <html data-theme="dark">
@@ -1367,9 +1364,7 @@ nav a.current-page::after {
    ========================================= */
 
 [data-theme="dark"] {
-    --bg-primary: #0f172a;
-    --bg-secondary: #1e293b;
-    --bg-tertiary: #273449;
+    --dark-bg: #0f172a;
 
     --text-primary: #e2e8f0;
     --text-secondary: #94a3b8;
@@ -1377,14 +1372,11 @@ nav a.current-page::after {
 
     --border-color: #334155;
     --link-color: #93b4f8;
-
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
 
 
 /* =========================================
-   SMOOTH THEME TRANSITION
+   SMOOTH COLOR TRANSITION
    ========================================= */
 
 body,
@@ -1396,8 +1388,7 @@ footer,
 .card,
 .card-body,
 .publication-card,
-.publication-content,
-.theme-toggle {
+.publication-content {
     transition:
         background-color 0.3s ease,
         color 0.3s ease,
@@ -1406,11 +1397,11 @@ footer,
 
 
 /* =========================================
-   FULL PAGE
+   FULL WEBSITE BACKGROUND
    ========================================= */
 
 [data-theme="dark"] body {
-    background-color: var(--bg-primary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1420,8 +1411,9 @@ footer,
 [data-theme="dark"] main,
 [data-theme="dark"] .page,
 [data-theme="dark"] .container,
-[data-theme="dark"] .container-fluid {
-    background-color: var(--bg-primary) !important;
+[data-theme="dark"] .container-fluid,
+[data-theme="dark"] section {
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1433,8 +1425,9 @@ footer,
 [data-theme="dark"] header,
 [data-theme="dark"] .header,
 [data-theme="dark"] .site-header,
-[data-theme="dark"] .top-header {
-    background-color: var(--bg-primary) !important;
+[data-theme="dark"] .top-header,
+[data-theme="dark"] .nav-wrap {
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1443,6 +1436,7 @@ footer,
 
 [data-theme="dark"] .brand,
 [data-theme="dark"] .brand a,
+[data-theme="dark"] .brand span,
 [data-theme="dark"] .brand-name,
 [data-theme="dark"] .brand-title {
     color: var(--heading-color) !important;
@@ -1450,12 +1444,29 @@ footer,
 
 
 /* =========================================
+   HEADER RIGHT SIDE
+   ========================================= */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+
+/* =========================================
    NAVIGATION
    ========================================= */
 
+.header-right nav {
+    display: flex;
+    align-items: center;
+}
+
 [data-theme="dark"] nav,
 [data-theme="dark"] .navbar {
-    background-color: var(--bg-primary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1464,13 +1475,97 @@ footer,
     color: var(--text-primary) !important;
 }
 
+[data-theme="dark"] nav a.current-page {
+    color: #ffffff !important;
+}
+
 [data-theme="dark"] nav a:hover,
 [data-theme="dark"] .navbar a:hover {
     color: var(--link-color) !important;
 }
 
-[data-theme="dark"] nav a.current-page {
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+
+.header-right .theme-toggle {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 34px;
+
+    /*
+       24px on the left separates the button
+       from the final navigation item.
+       
+       22px on the right separates it from
+       the Home/navigation area depending on
+       your HTML order.
+    */
+    margin: 0 22px;
+
+    padding: 0;
+
+    border: 1px solid #444;
+    border-radius: 50%;
+
+    background: transparent;
+    color: #222;
+
+    font-size: 15px;
+    line-height: 1;
+
+    cursor: pointer;
+    box-sizing: border-box;
+
+    /*
+       No transform transition.
+       Button will NOT move on hover.
+    */
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* Center Font Awesome icon */
+
+.header-right .theme-toggle i {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+/* Normal theme hover - NO movement */
+
+.header-right .theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+
+/* Dark theme button */
+
+[data-theme="dark"] .header-right .theme-toggle {
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
+    background-color: transparent !important;
+}
+
+
+/* Dark theme hover - NO movement */
+
+[data-theme="dark"] .header-right .theme-toggle:hover {
     color: #ffffff !important;
+    border-color: var(--text-primary) !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
 }
 
 
@@ -1514,16 +1609,17 @@ footer,
 
 /* =========================================
    CARDS
+   Same color as full website
    ========================================= */
 
 [data-theme="dark"] .card {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
     border-color: var(--border-color) !important;
 }
 
 [data-theme="dark"] .card-body {
-    background-color: transparent !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1547,7 +1643,7 @@ footer,
    ========================================= */
 
 [data-theme="dark"] .bg-light {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1556,12 +1652,9 @@ footer,
    PUBLICATIONS
    ========================================= */
 
-[data-theme="dark"] .publication-card {
-    background-color: var(--bg-secondary) !important;
-    color: var(--text-primary) !important;
-}
-
+[data-theme="dark"] .publication-card,
 [data-theme="dark"] .publication-content {
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
 }
 
@@ -1578,10 +1671,10 @@ footer,
 }
 
 
-/* Abstract / BibTeX / PDF expandable areas */
+/* Publication expandable sections */
 
 [data-theme="dark"] .toggle-section {
-    background-color: var(--bg-tertiary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
     border-color: var(--border-color) !important;
 }
@@ -1592,22 +1685,14 @@ footer,
 
 
 /* =========================================
+   RESEARCH GRID
+
    IMPORTANT:
-   KEEP YOUR RESEARCH GRID UNCHANGED
+   NO DARK THEME RULE FOR .research-grid.
+
+   Your existing research-grid background
+   and colors remain exactly as they are.
    ========================================= */
-
-/*
-   No dark-theme background override is applied
-   to .research-grid.
-
-   Therefore your existing:
-
-   .research-grid {
-       background: rgba(23, 32, 46, ...);
-   }
-
-   remains unchanged.
-*/
 
 
 /* =========================================
@@ -1630,7 +1715,7 @@ footer,
 
 
 /* =========================================
-   BUTTONS
+   PUBLICATION BUTTONS
    ========================================= */
 
 [data-theme="dark"] .pub-btn {
@@ -1639,61 +1724,7 @@ footer,
 
 
 /* =========================================
-   THEME TOGGLE BUTTON
-   ========================================= */
-
-.theme-toggle {
-    width: 34px;
-    height: 34px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 0;
-    margin: 0 10px 0 0;
-
-    border: 1px solid #444;
-    border-radius: 50%;
-
-    background: transparent;
-    color: #222;
-
-    font-size: 16px;
-    line-height: 1;
-
-    cursor: pointer;
-    vertical-align: middle;
-    flex-shrink: 0;
-
-    transition:
-        background-color 0.3s,
-        color 0.3s,
-        border-color 0.3s,
-        transform 0.2s;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.07);
-}
-
-
-/* Theme button in dark mode */
-
-[data-theme="dark"] .theme-toggle {
-    color: var(--text-primary) !important;
-    border-color: var(--border-color) !important;
-    background-color: transparent !important;
-}
-
-[data-theme="dark"] .theme-toggle:hover {
-    color: #ffffff !important;
-    border-color: var(--text-primary) !important;
-}
-
-
-/* =========================================
-   MOBILE MENU
+   MOBILE MENU BUTTON
    ========================================= */
 
 [data-theme="dark"] .menu-toggle {
@@ -1704,12 +1735,13 @@ footer,
 
 /* =========================================
    FOOTER
+   Same color as full website
    ========================================= */
 
 [data-theme="dark"] footer,
 [data-theme="dark"] .footer,
 [data-theme="dark"] .site-footer {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
     border-color: var(--border-color) !important;
 }
@@ -1730,13 +1762,13 @@ footer,
 
 
 /* =========================================
-   FORMS - CONTACT PAGE
+   FORMS / CONTACT PAGE
    ========================================= */
 
 [data-theme="dark"] input,
 [data-theme="dark"] textarea,
 [data-theme="dark"] select {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--dark-bg) !important;
     color: var(--text-primary) !important;
     border-color: var(--border-color) !important;
 }
@@ -1748,7 +1780,7 @@ footer,
 
 
 /* =========================================
-   HORIZONTAL LINES / BORDERS
+   HORIZONTAL LINES
    ========================================= */
 
 [data-theme="dark"] hr {
@@ -1762,107 +1794,9 @@ footer,
 
 @media (max-width: 768px) {
 
-    .theme-toggle {
-        width: 30px;
-        height: 30px;
-        font-size: 15px;
-        margin-right: 7px;
-    }
-
-}
-
-/* ==================================================
-   HEADER NAVIGATION + THEME BUTTON
-   ================================================== */
-
-.header-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 0;
-    margin-left: auto;
-}
-
-
-/* Desktop navigation */
-.header-right nav {
-    display: flex;
-    align-items: center;
-}
-
-
-/* ==================================================
-   THEME BUTTON
-   ================================================== */
-
-.header-right .theme-toggle {
-    width: 36px;
-    height: 36px;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    flex: 0 0 36px;
-
-    margin: 0 0 0 18px;
-    padding: 0;
-
-    border: 1px solid #d1d5db;
-    border-radius: 50%;
-
-    background: transparent;
-    color: inherit;
-
-    font-size: 15px;
-    line-height: 1;
-
-    cursor: pointer;
-    box-sizing: border-box;
-
-    transition:
-        background-color 0.2s ease,
-        border-color 0.2s ease,
-        transform 0.2s ease;
-}
-
-
-/* Perfectly center Font Awesome icon */
-.header-right .theme-toggle i {
-    display: block;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-
-
-/* Hover */
-.header-right .theme-toggle:hover {
-    background: rgba(128, 128, 128, 0.12);
-    transform: scale(1.05);
-}
-
-
-/* ==================================================
-   DARK THEME BUTTON
-   ================================================== */
-
-[data-theme="dark"] .header-right .theme-toggle {
-    color: #ffffff;
-    border-color: #64748b;
-    background: transparent;
-}
-
-[data-theme="dark"] .header-right .theme-toggle:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-
-
-/* ==================================================
-   MOBILE
-   ================================================== */
-
-@media (max-width: 768px) {
+    /*
+       Keep header controls aligned horizontally.
+    */
 
     .header-right {
         display: flex;
@@ -1871,20 +1805,23 @@ footer,
         margin-left: auto;
     }
 
+
     /*
-       Your existing mobile CSS controls whether
-       nav is open/closed. Do not force display:flex here.
+       Smaller theme button with enough separation
+       from hamburger/menu controls.
     */
 
     .header-right .theme-toggle {
-        width: 34px;
-        height: 34px;
-        flex: 0 0 34px;
+        width: 32px;
+        height: 32px;
 
-        margin: 0 10px 0 0;
+        flex: 0 0 32px;
+
+        margin: 0 12px 0 0;
 
         font-size: 14px;
     }
+
 
     .header-right .menu-toggle {
         margin: 0;
