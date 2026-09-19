@@ -1006,6 +1006,9 @@ footer {
     font-size: 0.95rem;
     font-weight: 600;
     margin-bottom: 8px;
+
+    /* Keep heading black */
+    color: #000000 !important;
 }
 
 .skill-list {
@@ -1022,6 +1025,19 @@ footer {
     background: #f8f9fa;
     font-size: 0.85rem;
     line-height: 1.3;
+
+    /* Keep badge text black */
+    color: #000000 !important;
+}
+
+/* Keep Professional Skills content black in dark mode */
+
+[data-theme="dark"] .skills-container .skill-group h3 {
+    color: #000000 !important;
+}
+
+[data-theme="dark"] .skills-container .skill-badge {
+    color: #000000 !important;
 }
 
 .section-title {
@@ -1885,17 +1901,4 @@ footer,
 
 }
 
-/* =========================================
-   PROFESSIONAL SKILLS - DARK MODE
-   ========================================= */
 
-
-
-/* =========================================
-   SKILLS - FORCE ORIGINAL BLACK TEXT
-   ========================================= */
-
-html[data-theme="dark"] body .skills-container,
-html[data-theme="dark"] body .skills-container * {
-    color: #000000 !important;
-}
