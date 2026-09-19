@@ -30,34 +30,45 @@
 <header class="site-header">
   <div class="container nav-wrap">
 
+    <!-- Brand -->
     <a class="brand" href="/">
       <img src="/assets/header.PNG" alt="Sabbir Hossen" class="brand-photo">
       <span>Sabbir Hossen</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+    <!-- Right Side: Theme + Menu + Navigation -->
+    <div class="nav-right">
+
+      <!-- Theme Toggle -->
       <button
-    type="button"
-    class="theme-toggle"
-    id="theme-toggle"
-    onclick="toggleTheme()"
-    aria-label="Toggle dark mode"
-    title="Toggle dark mode"
->
-    <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
-</button>
-<nav>
-  <a class="current-page" href="/" style="font-size: 16px;">Home</a>
-  <a href="/publications/" style="font-size: 16px;">Publications</a>
-  <!--   <a href="/research" style="font-size: 16px;">Research</a> -->
-  <a href="/background/" style="font-size: 16px;">Background</a>
-  <a href="/highlights/" style="font-size: 16px;">Highlights</a>
-  <a href="/contact/" style="font-size: 16px;">Contact</a>
-  <a href="/cv/" style="font-size: 16px;">CV</a>
-  <!--    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">☾</button> -->
+        type="button"
+        class="theme-toggle"
+        id="theme-toggle"
+        onclick="toggleTheme()"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+      </button>
 
-</nav>
 
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+
+      <!-- Navigation -->
+      <nav>
+        <a class="current-page" href="/" style="font-size: 16px;">Home</a>
+        <a href="/publications/" style="font-size: 16px;">Publications</a>
+        <!-- <a href="/research/" style="font-size: 16px;">Research</a> -->
+        <a href="/background/" style="font-size: 16px;">Background</a>
+        <a href="/highlights/" style="font-size: 16px;">Highlights</a>
+        <a href="/contact/" style="font-size: 16px;">Contact</a>
+        <a href="/cv/" style="font-size: 16px;">CV</a>
+      </nav>
+
+    </div>
 
   </div>
 </header>
