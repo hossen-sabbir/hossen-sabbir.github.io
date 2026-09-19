@@ -63,16 +63,16 @@
       </nav>
 
       <!-- Dark Mode -->
-      <button
-        type="button"
-        class="theme-toggle"
-        id="theme-toggle"
-        onclick="toggleTheme()"
-        aria-label="Toggle dark mode"
-        title="Toggle dark mode"
-      >
-        <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
-      </button>
+<button
+    type="button"
+    class="theme-toggle"
+    id="theme-toggle"
+    onclick="event.stopPropagation(); toggleTheme();"
+    aria-label="Toggle dark mode"
+    title="Toggle dark mode"
+>
+    <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+</button>
 
       <!-- Mobile Menu -->
       <button class="menu-toggle" aria-label="Toggle menu">☰</button>
