@@ -1772,55 +1772,43 @@ footer,
 }
 
 /* =========================================
-   HEADER RIGHT SIDE
-   Theme + Navigation
+   THEME BUTTON POSITION
    ========================================= */
 
-.nav-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+.nav-wrap {
+    position: relative;
 }
 
+/* Desktop */
+.theme-toggle {
+    position: absolute;
 
-/* Navigation alignment */
+    /* Position directly before navigation */
+    right: 485px;
+    top: 50%;
+    transform: translateY(-50%);
 
-.nav-right nav {
-    display: flex;
-    align-items: center;
-}
-
-
-/* Theme button */
-
-.nav-right .theme-toggle {
     width: 32px;
     height: 32px;
 
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
 
     padding: 0;
     margin: 0;
 
-    flex: 0 0 32px;
-
     border-radius: 50%;
 
-    line-height: 1;
-    vertical-align: middle;
+    z-index: 10;
 }
 
 
-/* Keep icon perfectly centered */
-
-.nav-right .theme-toggle i {
-    display: block;
-    line-height: 1;
+/* Keep icon centered */
+.theme-toggle i {
     margin: 0;
     padding: 0;
+    line-height: 1;
 }
 
 
@@ -1830,25 +1818,24 @@ footer,
 
 @media (max-width: 768px) {
 
-    .nav-right {
-        margin-left: auto;
-        gap: 8px;
-    }
+    .theme-toggle {
+        position: absolute;
 
-    /* Smaller theme button on mobile */
-    .nav-right .theme-toggle {
+        /*
+         Theme button immediately to the
+         left of hamburger menu
+        */
+        right: 52px;
+        top: 50%;
+        transform: translateY(-50%);
+
         width: 30px;
         height: 30px;
-        flex-basis: 30px;
-        font-size: 15px;
-    }
 
-    /*
-       On mobile the hamburger remains beside
-       the theme button.
-    */
-    .nav-right .menu-toggle {
         margin: 0;
+        padding: 0;
+
+        font-size: 15px;
     }
 
 }
