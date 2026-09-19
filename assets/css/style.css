@@ -1889,10 +1889,12 @@ footer,
    PROFESSIONAL SKILLS - DARK MODE
    ========================================= */
 
-[data-theme="dark"] .skills-container,
-[data-theme="dark"] .skills-container p,
-[data-theme="dark"] .skills-container span,
-[data-theme="dark"] .skills-container li,
-[data-theme="dark"] .skill-group {
-    color: #cbd5e1 !important;
+
+
+[data-theme="dark"] .skills-container .skill-group h3 {
+    color: #000000 !important;
+}
+
+[data-theme="dark"] .skills-container .skill-badge {
+    color: #000000 !important;
 }
