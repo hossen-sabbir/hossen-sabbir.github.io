@@ -1895,10 +1895,7 @@ footer,
    SKILLS - FORCE ORIGINAL BLACK TEXT
    ========================================= */
 
-html[data-theme="dark"] body .skills-container h3 {
-    color: #000000 !important;
-}
-
-html[data-theme="dark"] body .skills-container .skill-badge {
+html[data-theme="dark"] body .skills-container,
+html[data-theme="dark"] body .skills-container * {
     color: #000000 !important;
 }
