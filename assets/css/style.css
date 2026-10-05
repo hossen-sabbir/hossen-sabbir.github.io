@@ -1918,4 +1918,29 @@ footer,
 
 }
 
+.highlighted-papers-list {
+  display: block;
+  width: 100%;
+  margin: 12px 0 28px;
+  padding-left: 22px;
+  list-style: disc;
+}
 
+.highlighted-papers-list > li {
+  display: list-item;
+  width: auto;
+  margin-bottom: 12px;
+  padding: 0;
+}
+
+.highlighted-paper-content {
+  display: block;
+  width: auto;
+  max-width: none;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.highlighted-paper-content a {
+  white-space: nowrap;
+}
