@@ -1944,3 +1944,11 @@ footer,
 .highlighted-paper-content a {
   white-space: nowrap;
 }
+
+.experience-list > li {
+    margin-bottom: 12px;
+}
+
+.experience-list > li:last-child {
+    margin-bottom: 0;
+}
