@@ -1395,6 +1395,138 @@ publisher = {IEEE}
     <i class="fas fa-file-lines"></i> Submitted Manuscripts</h2>
 
 
+<!-- Preprint 1 -->
+<div id="pp1" class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
+    <div class="card-body">
+
+        <div class="publication-inner">
+
+            <div class="publication-image">
+                <img
+                    src="/assets/LLMQuantization.png"
+                    alt="LLM Quantization for Bangla Language Understanding">
+            </div>
+
+            <div class="publication-content">
+
+                <div class="publication-title">
+                    How Much Can We Compress Small LLMs? Quantization Trade-offs for Low-Resource Bangla Language Understanding
+                </div>
+
+                <div class="publication-authors">
+                    <strong>Md Sabbir Hossen</strong>, Anichur Rahman, Pabon Shaha, Andrew H. Sung, and Md Shohel Rana
+                </div>
+
+                <div class="publication-venue">
+                    <em>arXiv Preprint,</em> 2026
+                </div>
+
+                <div class="pub-actions">
+
+                    <button
+                        class="pub-btn pub-btn-abstract"
+                        onclick="toggleSection('pp1-abstract')">
+                        <i class="bi bi-card-text me-1"></i>
+                        Abstract
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-bibtex"
+                        onclick="toggleSection('pp1-bibtex')">
+                        <i class="bi bi-braces me-1"></i>
+                        BibTeX
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-pdf"
+                        onclick="toggleSection('pp1-pdf')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i>
+                        PDF
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-paper"
+                        onclick="toggleSection('pp1-paper')">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        Paper Link →
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-code"
+                        onclick="toggleSection('pp1-code')">
+                        <i class="bi bi-code-slash me-1"></i>
+                        Code
+                    </button>
+
+                </div>
+
+                <div
+                    id="pp1-abstract"
+                    class="toggle-section toggle-abstract">
+
+                    <strong>Abstract:</strong>
+
+                    <p>
+                        Large language models (LLMs) offer strong multilingual capabilities, but their memory requirements hinder deployment in resource-constrained settings, particularly for low-resource languages. Although post-training quantization can reduce these requirements, its effects on low-resource language understanding remain insufficiently characterized. We present a controlled study of model capacity and quantization for Bangla language understanding using Qwen2.5 models at 0.5B, 1.5B, and 3B parameters under FP16, INT8, and 4-bit NormalFloat (NF4) across stance classification, natural language inference, and fake-news classification, with Falcon3-3B providing cross-family validation. Qwen2.5-3B FP16 achieves Macro-F1 scores of 0.435, 0.728, and 0.664 across the three tasks, while the 0.5B model exhibits class collapse even before quantization. INT8 retains 96.2–99.9% of Qwen2.5-3B performance, whereas NF4 retention ranges from 77.3–91.3%. On an NVIDIA Tesla T4, INT8 and NF4 reduce the Qwen2.5-3B footprint by 45.0% and 67.4%, respectively, but neither improves inference speed. These findings show that effective LLM compression for low-resource languages requires jointly considering model capacity, task sensitivity, memory efficiency, and deployment hardware.
+                    </p>
+
+                </div>
+
+                <div
+                    id="pp1-bibtex"
+                    class="toggle-section toggle-bibtex">
+
+                    <strong>BibTeX:</strong>
+
+                    <pre>@misc{hossen2026compress,
+  title={How Much Can We Compress Small LLMs? Quantization Trade-offs for Low-Resource Bangla Language Understanding},
+  author={Hossen, Md Sabbir and Rahman, Anichur and Shaha, Pabon and Sung, Andrew H. and Rana, Md Shohel},
+  year={2026},
+  note={arXiv preprint}
+}</pre>
+
+                </div>
+
+                <div
+                    id="pp1-pdf"
+                    class="toggle-section toggle-pdf">
+
+                    <a href="/Publication/LLMQuantization.pdf" target="_blank">
+                        📄 Download PDF
+                    </a>
+
+                </div>
+
+                <div
+                    id="pp1-paper"
+                    class="toggle-section toggle-paper">
+
+                    <span>
+                        🔗 arXiv preprint link will be available soon.
+                    </span>
+
+                </div>
+
+                <div
+                    id="pp1-code"
+                    class="toggle-section toggle-code">
+
+                    <a
+                        href="https://github.com/sabbir5622r/bangla-llm-compression"
+                        target="_blank">
+                        💻 View Source Code
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-separator"></div>
+
+  
 <!-- Ongoing Research 3 -->
 <div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
     <div class="card-body">
