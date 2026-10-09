@@ -1526,6 +1526,136 @@ publisher = {IEEE}
 
 <div class="publication-separator"></div>
 
+<!-- Preprint 2 -->
+<div id="pp2" class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
+    <div class="card-body">
+
+        <div class="publication-inner">
+
+            <div class="publication-image">
+                <img
+                    src="/assets/llmrouting.png"
+                    alt="Confidence-Based Multilingual LLM Routing">
+            </div>
+
+            <div class="publication-content">
+
+                <div class="publication-title">
+                    Who Pays for Efficient Inference? Confidence-Based Small-to-Large LLM Routing Across Tasks and Languages
+                </div>
+
+                <div class="publication-authors">
+                    <strong>Md Sabbir Hossen</strong>, Anichur Rahman, Pabon Shaha, and Md Shohel Rana et al.
+                </div>
+
+                <div class="publication-venue">
+                    <em>arXiv Preprint,</em> 2026
+                </div>
+
+                <div class="pub-actions">
+
+                    <button
+                        class="pub-btn pub-btn-abstract"
+                        onclick="toggleSection('pp2-abstract')">
+                        <i class="bi bi-card-text me-1"></i>
+                        Abstract
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-bibtex"
+                        onclick="toggleSection('pp2-bibtex')">
+                        <i class="bi bi-braces me-1"></i>
+                        BibTeX
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-pdf"
+                        onclick="toggleSection('pp2-pdf')">
+                        <i class="bi bi-file-earmark-pdf me-1"></i>
+                        PDF
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-paper"
+                        onclick="toggleSection('pp2-paper')">
+                        <i class="bi bi-link-45deg me-1"></i>
+                        Paper Link →
+                    </button>
+
+                    <button
+                        class="pub-btn pub-btn-code"
+                        onclick="toggleSection('pp2-code')">
+                        <i class="bi bi-code-slash me-1"></i>
+                        Code
+                    </button>
+
+                </div>
+
+                <div
+                    id="pp2-abstract"
+                    class="toggle-section toggle-abstract">
+
+                    <strong>Abstract:</strong>
+
+                    <p>
+                        Small-to-large language model routing can reduce inference cost by escalating difficult inputs while retaining easier inputs on a smaller model. Its success, however, depends on identifying examples that benefit from escalation, and the reliability of confidence across multilingual tasks remains unclear. We present a systematic evaluation of confidence-based routing across three model families, four languages, and three task types, covering 72 model, dataset, language, and scale configurations and 42,288 predictions. We compare global confidence routing with random routing, equal-quota confidence routing, and an oracle upper bound. Confidence identifies beneficial escalations on the Belebele reading comprehension and SIB-200 topic classification datasets, with mean correction-detection AUCs of 0.612 and 0.705. At 50% escalation, it improves over random routing by 1.40–4.67 percentage points on Belebele and 2.54–5.63 points on SIB-200. In contrast, the mean AUC on the MMLU-ProX-Lite knowledge and reasoning dataset is only 0.510 because small models often remain highly confident while incorrect. Global confidence routing also creates language escalation gaps up to 30.33 percentage points, whereas equal-quota routing removes this disparity with little aggregate accuracy cost. These results show that confidence routing is task-dependent and can allocate computation unevenly across languages.
+                    </p>
+
+                </div>
+
+                <div
+                    id="pp2-bibtex"
+                    class="toggle-section toggle-bibtex">
+
+                    <strong>BibTeX:</strong>
+
+                    <pre>@misc{hossen2026routing,
+  title={Who Pays for Efficient Inference? Confidence-Based Small-to-Large LLM Routing Across Tasks and Languages},
+  author={Hossen, Md Sabbir and Rahman, Anichur and Shaha, Pabon and others},
+  year={2026},
+  note={arXiv preprint}
+}</pre>
+
+                </div>
+
+                <div
+                    id="pp2-pdf"
+                    class="toggle-section toggle-pdf">
+
+                    <a href="/Publication/llmrouting.pdf" target="_blank">
+                        📄 Download PDF
+                    </a>
+
+                </div>
+
+                <div
+                    id="pp2-paper"
+                    class="toggle-section toggle-paper">
+
+                    <span>
+                        🔗 arXiv preprint link will be available soon.
+                    </span>
+
+                </div>
+
+                <div
+                    id="pp2-code"
+                    class="toggle-section toggle-code">
+
+                    <a
+                        href="https://github.com/sabbir5622r/multilingual-llm-routing"
+                        target="_blank">
+                        💻 View Source Code
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="publication-separator"></div>
   
 <!-- Ongoing Research 3 -->
 <div class="card border-0 publication-card" style="background: transparent; border-radius: 0;">
